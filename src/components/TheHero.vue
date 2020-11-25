@@ -1,5 +1,6 @@
 <template>
   <section
+    id="bttHero"
     class="hero btt-border-radius-l"
     :class="{ 'is-fullheight': heroFull }"
   >
@@ -58,12 +59,13 @@ export default {
 </script>
 <style>
 section.hero {
-  background-image: url("../assets/herohome.png");
+  /* background-image: url("../assets/herohome.png"); */
   background-position: left;
   background-size: cover;
   background-repeat: no-repeat;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+  transition: height 0.3s;
 }
 .column .title {
   font-family: "Comfortaa", cursive;

@@ -30,7 +30,7 @@
             <router-link to="/our_company">Our Company</router-link>
           </div>
           <div class="navbar-item">
-            <router-link to="/innovation">Innovation</router-link>
+            <router-link to="innovation">Innovation</router-link>
           </div>
           <div class="navbar-item">
             <router-link to="/what_we_offer">What We Offer</router-link>
