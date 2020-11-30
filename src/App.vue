@@ -1,6 +1,6 @@
 <template>
-  <TheHero />
-  <transition class="fade">
+    <TheHero />
+  <transition name="fade" appear>
     <router-view :key="$route.fullPath" />
   </transition>
   <TheFooter />
@@ -25,12 +25,15 @@ export default {
   color: #2c3e50;
 }
 
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.3s;
+.fade-enter-active {
+  transition: all 0.6s;
 }
 
-.fade-enter,
+.fade-leave-active {
+  transition: all 0.6s;
+}
+
+.fade-enter-from,
 .fade-leave-to {
   opacity: 0;
 }

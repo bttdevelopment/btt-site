@@ -2,7 +2,7 @@
   <section
     id="bttHero"
     class="hero btt-border-radius-l"
-    :class="{ 'is-fullheight': heroFull }"
+    :class="{ 'is-fullheight': heroFull, 'is-medium': heroMedium }"
   >
     <div class="hero-head">
       <TopBar />
@@ -41,16 +41,19 @@ export default {
   },
   data() {
     return {
-      heroFull: false
+      heroFull: false,
+      heroMedium: true
     };
   },
   watch: {
     $route() {
       if (this.$route.path === "/") {
+        this.heroMedium = false;
         this.heroFull = true;
         console.log("its at home");
       } else {
         this.heroFull = false;
+        this.heroMedium = true;
         console.log("its not at home");
       }
     }
@@ -58,14 +61,15 @@ export default {
 };
 </script>
 <style>
-section.hero {
+.hero {
   /* background-image: url("../assets/herohome.png"); */
   background-position: left;
   background-size: cover;
   background-repeat: no-repeat;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-  transition: height 0.3s;
+  transition: height 0.3s !important;
+
 }
 .column .title {
   font-family: "Comfortaa", cursive;
