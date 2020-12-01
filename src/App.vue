@@ -1,7 +1,7 @@
 <template>
-    <TheHero />
-  <transition name="fade" appear>
-    <router-view :key="$route.fullPath" />
+  <TheHero />
+  <transition name="fade" mode="out-in">
+    <router-view />
   </transition>
   <TheFooter />
 </template>
@@ -26,11 +26,11 @@ export default {
 }
 
 .fade-enter-active {
-  transition: all 0.6s;
+  transition: all 0.3s;
 }
 
 .fade-leave-active {
-  transition: all 0.6s;
+  transition: all 0.3s;
 }
 
 .fade-enter-from,

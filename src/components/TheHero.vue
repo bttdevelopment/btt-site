@@ -1,8 +1,9 @@
 <template>
+  <transition>
   <section
     id="bttHero"
     class="hero btt-border-radius-l"
-    :class="{ 'is-fullheight': heroFull, 'is-medium': heroMedium }"
+    :class="{ 'is-fullheight': heroFull}"
   >
     <div class="hero-head">
       <TopBar />
@@ -27,6 +28,7 @@
       </div>
     </div>
   </section>
+  </transition>
 </template>
 
 <script>

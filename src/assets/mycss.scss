@@ -104,6 +104,10 @@ $link-focus-border: $primary;
     height: 100%;
 }
 
+.btt-margin {
+    margin-left:min(15px, 5%);
+    margin-right:min(15px, 5%);
+}
 
 
 // Import Bulma and Buefy styles
