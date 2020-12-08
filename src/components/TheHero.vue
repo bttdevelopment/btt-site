@@ -1,5 +1,12 @@
 <template>
   <!-- <transition :name="transitionName"> -->
+  <video-background
+    
+    src="../assets/brain2.mp4"
+    poster="../assets/herohome.png"
+    overlay="linear-gradient(0deg, rgba(0, 0, 0, 0.88), rgba(251, 148, 158, 0.22), rgba(251, 148, 158, 0.42))"
+    style="height: 100vh;"
+  >
     <section
     id="bttHero"
     class="hero btt-border-radius-l"
@@ -12,22 +19,29 @@
     <div class="hero-body">
       <div class="container has-text-left has-text-black">
         <div class="columns">
-          <div class="column">
-            <h1 class="title is-success has-text-bttgreen">
-              Preserve, Protect, Prolong Life
-            </h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-              dolorum cum totam rem unde consequuntur explicabo numquam.
+          <div class="column is-7 is-offset-1">
+            <h2 class="title has-text-bttgreen">
+              Brain Tunnelgenix Technologies, Corp.
+            </h2>
+            <div style="max-width: 600px">
+            <p class="block">
+              World's first noninvasive and continuous technology 
             </p>
-          </div>
-          <div class="column">
-            <img />
+              <ul class="block">
+                <li>to track human brain temparature</li>
+                <li>to detect infectious diseases</li>
+                <li>to treat neorodegenerative disease through the <strong>Brain Thermal Tunnel</strong></li>
+              </ul>
+            <p>
+              Our Mission: <strong>Protect, Preserve, Prolong Life</strong>
+            </p>
+            </div>
           </div>
           </div>
         </div>
       </div>
     </section>
+    </video-background>
   <!-- </transition> -->
 </template>
 
@@ -68,10 +82,10 @@ export default {
 </script>
 <style>
 .hero {
-  /* background-image: url("../assets/herohome.png"); */
+  /* background-image: url("../assets/herohome.png");
   background-position: left;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
@@ -91,4 +105,5 @@ export default {
 .fade-leave-to {
   opacity: 0;
 } */
+
 </style>
