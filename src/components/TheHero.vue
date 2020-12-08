@@ -1,9 +1,9 @@
 <template>
-  <transition>
-  <section
+  <!-- <transition :name="transitionName"> -->
+    <section
     id="bttHero"
     class="hero btt-border-radius-l"
-    :class="{ 'is-fullheight': heroFull}"
+      :class="{ 'is-fullheight': heroFull }"
   >
     <div class="hero-head">
       <TopBar />
@@ -24,11 +24,11 @@
           <div class="column">
             <img />
           </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  </transition>
+    </section>
+  <!-- </transition> -->
 </template>
 
 <script>
@@ -44,22 +44,26 @@ export default {
   data() {
     return {
       heroFull: false,
-      heroMedium: true
+      // heroMedium: true,
+      // transitionName: null
     };
   },
   watch: {
-    $route() {
-      if (this.$route.path === "/") {
-        this.heroMedium = false;
+    $route(to) {
+      if (to.path === "/") {
+        // this.heroMedium = false;
+        // this.transitionName = "fade";
         this.heroFull = true;
         console.log("its at home");
-      } else {
+      } 
+      else{
+        // this.transitionName = "fade";
         this.heroFull = false;
-        this.heroMedium = true;
+        // this.heroMedium = true;
         console.log("its not at home");
       }
     }
-  }
+  }  
 };
 </script>
 <style>
@@ -70,10 +74,21 @@ export default {
   background-repeat: no-repeat;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-  transition: height 0.3s !important;
-
 }
 .column .title {
   font-family: "Comfortaa", cursive;
 }
+
+/* .fade-enter-active {
+  transition: all 0.3s;
+}
+
+.fade-leave-active {
+  transition: all 0.3s;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+} */
 </style>
