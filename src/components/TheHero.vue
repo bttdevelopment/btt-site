@@ -1,11 +1,10 @@
 <template>
   <!-- <transition :name="transitionName"> -->
   <video-background
-    
-    src="../assets/brain2.mp4"
+    :src="require(`../assets/neuronsloop1.mp4`)"
     poster="../assets/herohome.png"
-    overlay="linear-gradient(0deg, rgba(0, 0, 0, 0.88), rgba(251, 148, 158, 0.22), rgba(251, 148, 158, 0.42))"
-    style="height: 100vh;"
+    style="height: 100vh"
+    v-if="heroFull"
   >
     <section
     id="bttHero"
@@ -13,7 +12,7 @@
       :class="{ 'is-fullheight': heroFull }"
   >
     <div class="hero-head">
-      <TopBar />
+      <!-- <TopBar /> -->
       <NavigationBar />
     </div>
     <div class="hero-body">
@@ -46,13 +45,13 @@
 </template>
 
 <script>
-import TopBar from "./TopBar";
+// import TopBar from "./TopBar";
 import NavigationBar from "./NavigationBar";
 
 export default {
   name: "Hero",
   components: {
-    TopBar,
+    // TopBar,
     NavigationBar
   },
   data() {
