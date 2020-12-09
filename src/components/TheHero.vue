@@ -3,8 +3,6 @@
   <video-background
     :src="require(`../assets/neuronsloop1.mp4`)"
     poster="../assets/herohome.png"
-    style="height: 100vh"
-    v-if="heroFull"
   >
     <section
     id="bttHero"
@@ -92,6 +90,9 @@ export default {
   font-family: "Comfortaa", cursive;
 }
 
+.hero-small{
+  max-heigt:200px;
+}
 /* .fade-enter-active {
   transition: all 0.3s;
 }
