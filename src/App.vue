@@ -2,12 +2,19 @@
 <video-background
     :src="require(`./assets/neuronsloop1.mp4`)"
     poster="../assets/herohome.png"
+    v-if="heroFull"
   >
-    <TheHero />
+    <TheHero :heroFull="true"/>
 </video-background>
-  <transition name="fade" mode="out-in">
+  <TheHero v-else />
+  <!-- <transition name="fade" mode="out-in">
     <router-view />
-  </transition>
+  </transition> -->
+  <router-view v-slot="{ Component }">
+    <transition>
+      <component :is="Component" />
+    </transition>
+  </router-view>
   <TheFooter />
 </template>
 <script>
@@ -18,6 +25,26 @@ export default {
   components: {
     TheHero,
     TheFooter
+  },
+  data() {
+    return {
+      heroFull: null
+    }
+  },
+  watch: {
+    $route(to) {
+      if (to.path === "/") {
+        // this.heroMedium = false;
+        // this.transitionName = "fade";
+        this.heroFull = true;
+        console.log("its at home");
+      } else {
+        // this.transitionName = "fade";
+        this.heroFull = false;
+        // this.heroMedium = true;
+        console.log("its not at home");
+      }
+    }
   }
 };
 </script>

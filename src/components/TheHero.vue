@@ -3,7 +3,7 @@
     <section
     id="bttHero"
     class="hero btt-border-radius-l"
-      :class="{ 'is-fullheight': heroFull }"
+      :class="{ 'is-fullheight': heroFull}"
   >
     <div class="hero-head">
       <!-- <TopBar /> -->
@@ -13,10 +13,11 @@
       <div class="container has-text-left has-text-white">
         <div class="columns">
           <div class="column is-7 is-offset-1">
-            <h1 class="title has-text-bttgreen">
+            <h1 class="title has-text-bttgreen" v-if="heroFull">
               Brain Tunnelgenix Technologies, Corp.
             </h1>
-            <div style="max-width: 600px">
+            
+            <div style="max-width: 600px" v-if="heroFull">
             <p class="block">
               World's first noninvasive and continuous technology 
             </p>
@@ -47,29 +48,9 @@ export default {
     // TopBar,
     NavigationBar
   },
-  data() {
-    return {
-      heroFull: false,
-      // heroMedium: true,
-      // transitionName: null
-    };
-  },
-  watch: {
-    $route(to) {
-      if (to.path === "/") {
-        // this.heroMedium = false;
-        // this.transitionName = "fade";
-        this.heroFull = true;
-        console.log("its at home");
-      } 
-      else{
-        // this.transitionName = "fade";
-        this.heroFull = false;
-        // this.heroMedium = true;
-        console.log("its not at home");
-      }
-    }
-  }  
+  props: {
+    heroFull: Boolean
+  }
 };
 </script>
 <style>
@@ -83,10 +64,6 @@ export default {
 }
 .column .title {
   font-family: "Comfortaa", cursive;
-}
-
-.hero-small{
-  max-heigt:200px;
 }
 /* .fade-enter-active {
   transition: all 0.3s;

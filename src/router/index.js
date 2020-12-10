@@ -41,7 +41,27 @@ const routes = [
     name: "contact",
     component: () =>
       import(/* webpackChunkName: "contactUs" */ "../views/ContactUs.vue")
-  }
+  },
+  {
+    path:"/medical-institute",
+    name: "medicalInstite",
+    component: () =>
+      import(/* webpackChunkName: "medical" */ "../views/MedicalInstitute.vue")
+  },
+  {
+    path:"/research-publication",
+    name: "researchPublication",
+    component: () =>
+      import(
+        /* webpackChunkName: "research" */ "../views/ResearchPublication.vue"
+      )
+  },
+  {
+    path:"/news",
+    name: "newsMedia",
+    component: () =>
+      import(/* webpackChunkName: "media" */ "../views/NewsMedia.vue")
+  },
 ];
 
 const router = createRouter({
