@@ -1,5 +1,12 @@
 <template>
+<video-background
+    :src="require(`./assets/neuronsloop1.mp4`)"
+    poster="../assets/herohome.png"
+    v-if="heroFull"
+  >
     <TheHero />
+</video-background>
+  <TheHero v-else/>
   <transition name="fade" mode="out-in">
     <router-view />
   </transition>

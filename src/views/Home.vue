@@ -26,10 +26,17 @@
       <div class="columns is-gapless">
         <div class="column">
           <p class="content is-small">
-            The body is a machine moved by heat, but for the past 300 years, physicians and other caregivers have measured heat in all the wrong places. Though thermometers have undergone incremental improvements, they still have major shortcomings that produce inaccurate data.
-
-The brain thermal tunnel revolutionizes the way that we understand heat. It makes use of a biological, bi-directional tunnel that starts at the intersection of the nose and eyebrow where thermal signature patterns are captured from the brain. With that information, our engineers, scientists, and researchers develop diagnostics, therapies, & ____ to control the brain thermal tunnel _____ (fitness, hydration, treatment, etc.)
-
+            The body is a machine moved by heat, but for the past 300 years,
+            physicians and other caregivers have measured heat in all the wrong
+            places. Though thermometers have undergone incremental improvements,
+            they still have major shortcomings that produce inaccurate data. The
+            brain thermal tunnel revolutionizes the way that we understand heat.
+            It makes use of a biological, bi-directional tunnel that starts at
+            the intersection of the nose and eyebrow where thermal signature
+            patterns are captured from the brain. With that information, our
+            engineers, scientists, and researchers develop diagnostics,
+            therapies, & ____ to control the brain thermal tunnel _____
+            (fitness, hydration, treatment, etc.)
           </p>
         </div>
         <div class="column btt-hippocampus-img">

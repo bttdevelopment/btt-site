@@ -1,9 +1,5 @@
 <template>
   <!-- <transition :name="transitionName"> -->
-  <video-background
-    :src="require(`../assets/neuronsloop1.mp4`)"
-    poster="../assets/herohome.png"
-  >
     <section
     id="bttHero"
     class="hero btt-border-radius-l"
@@ -14,12 +10,12 @@
       <NavigationBar />
     </div>
     <div class="hero-body">
-      <div class="container has-text-left has-text-black">
+      <div class="container has-text-left has-text-white">
         <div class="columns">
           <div class="column is-7 is-offset-1">
-            <h2 class="title has-text-bttgreen">
+            <h1 class="title has-text-bttgreen">
               Brain Tunnelgenix Technologies, Corp.
-            </h2>
+            </h1>
             <div style="max-width: 600px">
             <p class="block">
               World's first noninvasive and continuous technology 
@@ -38,7 +34,6 @@
         </div>
       </div>
     </section>
-    </video-background>
   <!-- </transition> -->
 </template>
 
