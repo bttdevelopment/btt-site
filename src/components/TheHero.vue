@@ -50,7 +50,6 @@ export default {
   },
   data() {
     return {
-      heroTitle: null,
       heroTitles: {
         about: {
           title: "About Us"
@@ -68,7 +67,8 @@ export default {
     }
   },
   props: {
-    heroFull: Boolean
+    heroFull: Boolean,
+    heroTitle: String
   },
   watch: {
     $route() {

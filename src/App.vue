@@ -2,11 +2,11 @@
 <video-background
     :src="require(`./assets/neuronsloop1.mp4`)"
     poster="../assets/herohome.png"
-    v-if="heroFull"
+    v-if="isHome"
   >
-    <TheHero :heroFull="true"/>
+    <TheHero :heroFull="true" heroTitle="Brain Tunnelgenix Technologies"/>
 </video-background>
-  <TheHero v-else />
+  <TheHero v-else :heroFull="false" :heroTitle="this.heroTitle"/>
   <!-- <transition name="fade" mode="out-in">
     <router-view />
   </transition> -->
@@ -28,7 +28,9 @@ export default {
   },
   data() {
     return {
-      heroFull: null
+      isHome: Boolean,
+      heroFull: null,
+      heroTitle: "Brain Tunnelgenix Technologies"
     }
   },
   watch: {
@@ -36,13 +38,16 @@ export default {
       if (to.path === "/") {
         // this.heroMedium = false;
         // this.transitionName = "fade";
-        this.heroFull = true;
-        console.log("its at home");
+        this.isHome = true;
       } else {
         // this.transitionName = "fade";
-        this.heroFull = false;
+        this.isHome = false;
         // this.heroMedium = true;
-        console.log("its not at home");
+        if (to.name == "about") {
+          this.heroTitle = "About Us";
+        } else if (to.name == "innovation") {
+          this.heroTitle = "Innovation";
+        }
       }
     }
   }
