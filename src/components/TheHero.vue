@@ -3,7 +3,7 @@
     <section
     id="bttHero"
     class="hero btt-border-radius-l"
-      :class="{ 'is-fullheight': heroFull}"
+    :class="{ 'is-fullheight': heroFull }"
   >
     <div class="hero-head">
       <!-- <TopBar /> -->
@@ -13,8 +13,8 @@
       <div class="container has-text-left has-text-white">
         <div class="columns">
           <div class="column is-7 is-offset-1">
-            <h1 class="title has-text-bttgreen" v-if="heroFull">
-              Brain Tunnelgenix Technologies, Corp.
+            <h1 class="title has-text-bttgreen">
+              {{ heroTitle }}
             </h1>
             
             <div style="max-width: 600px" v-if="heroFull">
@@ -48,8 +48,34 @@ export default {
     // TopBar,
     NavigationBar
   },
+  data() {
+    return {
+      heroTitle: null,
+      heroTitles: {
+        about: {
+          title: "About Us"
+        },
+        medicalInstitute: {
+          title: "BTT BioMedical and Research Institute"
+        },
+        researchPublication: {
+          title: "Research and Publications"
+        },
+        newsMedia: {
+          title: "News and Media Coverage"
+        }
+      }
+    }
+  },
   props: {
     heroFull: Boolean
+  },
+  watch: {
+    $route() {
+      for (const currentRoute in this.heroTitles) {
+        console.log(this.heroTitles[currentRoute].title);
+      }
+    }
   }
 };
 </script>
