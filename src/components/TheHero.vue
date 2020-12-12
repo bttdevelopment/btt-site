@@ -1,5 +1,4 @@
 <template>
-  <!-- <transition :name="transitionName"> -->
     <section
     id="bttHero"
     class="hero btt-border-radius-l"
@@ -9,15 +8,16 @@
       <!-- <TopBar /> -->
       <NavigationBar />
     </div>
-    <div class="hero-body">
+    <div id="hero-body" class="hero-body">
       <div class="container has-text-left has-text-white">
         <div class="columns">
           <div class="column is-7 is-offset-1">
-            <h1 class="title has-text-bttgreen">
-              {{ heroTitle }}
-            </h1>
-            
-            <div style="max-width: 600px" v-if="heroFull">
+            <transition name="slide-fade" mode="out-in">
+              <h1 class="title has-text-white" :key="$route.path">
+                {{ heroTitle }}
+              </h1>
+            </transition>
+            <div  class="btt-border-radius-m" style="max-width: 600px;" v-if="heroFull">
             <p class="block">
               World's first noninvasive and continuous technology 
             </p>
@@ -35,7 +35,6 @@
         </div>
       </div>
     </section>
-  <!-- </transition> -->
 </template>
 
 <script>
@@ -48,34 +47,9 @@ export default {
     // TopBar,
     NavigationBar
   },
-  data() {
-    return {
-      heroTitles: {
-        about: {
-          title: "About Us"
-        },
-        medicalInstitute: {
-          title: "BTT BioMedical and Research Institute"
-        },
-        researchPublication: {
-          title: "Research and Publications"
-        },
-        newsMedia: {
-          title: "News and Media Coverage"
-        }
-      }
-    }
-  },
   props: {
     heroFull: Boolean,
     heroTitle: String
-  },
-  watch: {
-    $route() {
-      for (const currentRoute in this.heroTitles) {
-        console.log(this.heroTitles[currentRoute].title);
-      }
-    }
   }
 };
 </script>
@@ -87,21 +61,33 @@ export default {
   background-repeat: no-repeat; */
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+  height: 300px;
 }
 .column .title {
   font-family: "Comfortaa", cursive;
 }
-/* .fade-enter-active {
-  transition: all 0.3s;
+.slide-fade-enter-active {
+  transition: all 0.3s ease-out;
 }
 
-.fade-leave-active {
-  transition: all 0.3s;
+.slide-fade-leave-active {
+  transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
 }
 
-.fade-enter-from,
-.fade-leave-to {
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateX(20px);
   opacity: 0;
-} */
+}
+#abstract-bg {
+  background-image: url("../assets/abstract.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 1em 0 1em 1em;
+}
 
+p strong, ul strong {
+  color:white;
+}
 </style>

@@ -1,17 +1,20 @@
 <template>
+  <transition name="slide-up">
+
 <video-background
-    :src="require(`./assets/neuronsloop1.mp4`)"
-    poster="../assets/herohome.png"
+    :loop="false"
+    :src="require(`./assets/brainloop1.mp4`)"
     v-if="isHome"
   >
     <TheHero :heroFull="true" heroTitle="Brain Tunnelgenix Technologies"/>
 </video-background>
   <TheHero v-else :heroFull="false" :heroTitle="this.heroTitle"/>
+  </transition>
   <!-- <transition name="fade" mode="out-in">
     <router-view />
   </transition> -->
   <router-view v-slot="{ Component }">
-    <transition>
+    <transition name="fade">
       <component :is="Component" />
     </transition>
   </router-view>
@@ -73,5 +76,9 @@ export default {
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
+}
+.slide-up-enter-active,
+.slide-up-leave-active {
+  transition: all 0.3s;
 }
 </style>
