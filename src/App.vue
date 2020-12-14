@@ -2,8 +2,7 @@
   <transition name="slide-up">
 
 <video-background
-    :loop="false"
-    :src="require(`./assets/brainloop1.mp4`)"
+    :src="require(`./assets/brain1.mp4`)"
     v-if="isHome"
   >
     <TheHero :heroFull="true" heroTitle="Brain Tunnelgenix Technologies"/>
@@ -48,8 +47,14 @@ export default {
         // this.heroMedium = true;
         if (to.name == "about") {
           this.heroTitle = "About Us";
-        } else if (to.name == "innovation") {
-          this.heroTitle = "Innovation";
+        } else if (to.name == "medicalInstite") {
+          this.heroTitle = "BTT Biomedical and Research Institute";
+        } else if (to.name == "researchPublication") {
+          this.heroTitle = "Research and Publications";
+        } else if (to.name == "newsMedia") {
+          this.heroTitle = "News and Media";
+        } else if (to.name == "contact") {
+          this.heroTitle = "Contact Us";
         }
       }
     }

@@ -13,11 +13,15 @@
         <div class="columns">
           <div class="column is-7 is-offset-1">
             <transition name="slide-fade" mode="out-in">
-              <h1 class="title has-text-white" :key="$route.path">
+              <h1
+                class="title"
+                :class="{ 'has-text-white': heroFull, 'has-text-bttgreen': !heroFull }"
+                :key="$route.path"
+              >
                 {{ heroTitle }}
               </h1>
             </transition>
-            <div  class="btt-border-radius-m" style="max-width: 600px;" v-if="heroFull">
+            <div  class="hero-text btt-border-radius-m" style="max-width: 600px;" v-if="heroFull">
             <p class="block">
               World's first noninvasive and continuous technology 
             </p>
@@ -63,8 +67,13 @@ export default {
   border-top-right-radius: 0;
   height: 300px;
 }
+.hero-text{
+  font-size:1.2em;
+  font-weight:550;
+}
 .column .title {
-  font-family: "Comfortaa", cursive;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 3rem;
 }
 .slide-fade-enter-active {
   transition: all 0.3s ease-out;

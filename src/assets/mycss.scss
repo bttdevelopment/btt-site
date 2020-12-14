@@ -1,7 +1,9 @@
 // Import Bulma's core
+
 @import "~bulma/sass/utilities/_all";
 
 // Set your colors
+$navbar-item-color: $white;
 $primary: #8c67ef;
 $primary-light: findLightColor($primary);
 $primary-dark: findDarkColor($primary);
@@ -58,15 +60,13 @@ $colors: mergeColorMaps(("white": ($white,
         ),
         "bttgreen": ( $bttgreen,
         $bttgreen-invert,
-        ),
+        )
     ),
     $custom-colors);
 
 // Links
-$link: $primary;
 $link-invert: $primary-invert;
 $link-focus-border: $primary;
-
 
 //============MYCSS============
 .btt-gradient-background-vertical {

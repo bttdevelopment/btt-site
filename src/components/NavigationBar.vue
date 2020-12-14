@@ -3,7 +3,7 @@
     <div class="container is-fullhd">
       <div id="logoContainer" class="navbar-brand" style="margin-left: 0;">
         <router-link to="/"
-          ><img class="mt-3 ml-3" src="../assets/bttlogo.png"
+          ><img class="mt-3 ml-3" src="../assets/bttlogo_text_white.png"
         /></router-link>
         <a
           role="button"
@@ -27,13 +27,23 @@
           style="flex-grow: 1; justify-content: center;"
         >
           <div class="navbar-item">
-            <router-link to="/our_company">Our Company</router-link>
+            <router-link to="/our_company">About Us</router-link>
           </div>
           <div class="navbar-item">
-            <router-link to="innovation">Innovation</router-link>
+            <router-link to="/medical-institute"
+              >Biomedical, Research Institute</router-link
+            >
           </div>
           <div class="navbar-item">
-            <router-link to="/what_we_offer">What We Offer</router-link>
+            <router-link to="/research-publication"
+              >Research, Publications</router-link
+            >
+          </div>
+          <div class="navbar-item">
+            <router-link to="/news">Media</router-link>
+          </div>
+          <div class="navbar-item">
+            <router-link to="contact">Contact Us</router-link>
           </div>
         </div>
         <div class="navbar-end">
@@ -70,10 +80,14 @@ nav a.router-link-exact-active {
 }
 
 nav a {
-  color: black;
+  color: white;
 }
 
 nav a img {
   max-height: 40px;
+}
+
+.navbar-item {
+
 }
 </style>
