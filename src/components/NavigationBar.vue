@@ -1,10 +1,12 @@
 <template>
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="container is-fullhd">
-      <div id="logoContainer" class="navbar-brand" style="margin-left: 0;">
+      <div id="navbar-brand" class="navbar-brand" style="margin-left: 0;">
+        <div id="brand-logo-container">
         <router-link to="/"
-          ><img class="mt-3 ml-3" src="../assets/bttlogo_text_white.png"
+          ><img class="ml-3 mt-1" src="../assets/bttlogo_text_gradient.png"
         /></router-link>
+        </div>
         <a
           role="button"
           class="navbar-burger"
@@ -30,11 +32,6 @@
             <router-link to="/our_company">About Us</router-link>
           </div>
           <div class="navbar-item">
-            <router-link to="/medical-institute"
-              >Biomedical, Research Institute</router-link
-            >
-          </div>
-          <div class="navbar-item">
             <router-link to="/research-publication"
               >Research, Publications</router-link
             >
@@ -48,9 +45,9 @@
         </div>
         <div class="navbar-end">
           <div class="navbar-item">
-            <router-link to="/apply_for_treatment">
+            <router-link to="/medical-institute">
               <button class="button is-rounded is-bttgreen is-outlined">
-                Apply For Treatment
+               Medical Institute
               </button>
             </router-link>
           </div>
@@ -76,18 +73,28 @@ export default {
 </script>
 <style>
 nav a.router-link-exact-active {
+  color:#f35e19;
+}
+.hero .navbar {
+  background-color: white !important;
+}
+nav a {
   color: #008f89;
 }
 
-nav a {
-  color: white;
-}
-
 nav a img {
-  max-height: 40px;
+  max-height: 33px;
 }
-
-.navbar-item {
-
+#navbar-brand {
+    align-content: center;
+    /* commenting this out, the multiple lines will have gaps */
+    align-items: center;
+    /* commenting this out, the one-line will not align */
+}
+#brand-logo-container {
+  margin-right: 5em;
+}
+.navbar-burger {
+  color: #008f89 !important;
 }
 </style>

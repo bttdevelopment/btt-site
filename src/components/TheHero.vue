@@ -95,6 +95,13 @@ export default {
   background-repeat: no-repeat;
   padding: 1em 0 1em 1em;
 }
+  .hero-body h1 {
+    background-color: none !important;
+  
+  }
+.hero-body .column {
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
 p strong, ul strong {
   color:white;
