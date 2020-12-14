@@ -9,7 +9,7 @@
           <img src="../assets/bttlogo_white.png" />
         </div>
         <div class="column is-10">
-          <h5 class="title is-5 blue">
+          <h5 class="title is-5 has-text-white">
             Following our purpose to Protect, Preserve and Prolong life
           </h5>
         </div>
