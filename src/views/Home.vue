@@ -39,7 +39,7 @@
             (fitness, hydration, treatment, etc.)
           </p>
         </div>
-        <div class="column btt-hippocampus-img">
+          <div class="column btt-hippocampus-img">
         </div>
       </div>
     </div>
