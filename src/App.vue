@@ -12,11 +12,10 @@
   <!-- <transition name="fade" mode="out-in">
     <router-view />
   </transition> -->
-  <router-view v-slot="{ Component }">
     <transition name="fade">
-      <component :is="Component" />
+        <router-view></router-view>
     </transition>
-  </router-view>
+
   <TheFooter />
 </template>
 <script>
