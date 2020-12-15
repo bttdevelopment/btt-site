@@ -19,7 +19,7 @@
       </div>
     <!-- </div> -->
   </section>
-  <section
+  <!-- <section
     class="container is-widescreen mb-6 has-text-left"
   >
     <div class="container">
@@ -43,7 +43,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 </template>
 <script>
 export default {
