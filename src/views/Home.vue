@@ -20,7 +20,7 @@
     <!-- </div> -->
   </section>
   <section
-    class="container is-widescreen mb-6 has-text-left notification"
+    class="container is-widescreen mb-6 has-text-left"
   >
     <div class="container">
       <div class="columns is-gapless">
