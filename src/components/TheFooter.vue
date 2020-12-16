@@ -9,11 +9,7 @@
           <img src="../assets/bttlogo_white.png" />
         </div>
         <div class="column is-10">
-<<<<<<< HEAD
-          <h5 class="title is-5 has-text-white">
-=======
           <h5 class="title is-5 blue has-text-white">
->>>>>>> pre-netlify-deploy
             Following our purpose to Protect, Preserve and Prolong life
           </h5>
         </div>
