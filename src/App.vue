@@ -2,7 +2,7 @@
   <transition name="slide-up">
 
 <video-background
-    :src="require(`../public/brainloop1.mp4`)"
+    :src="require(`./assets/brainloop1.mp4`)"
     v-if="isHome"
   >
     <TheHero :heroFull="true" heroTitle="Brain Tunnelgenix Technologies"/>
