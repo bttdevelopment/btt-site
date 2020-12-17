@@ -17,7 +17,7 @@ Our discovery allows us for the first time in history to measure brain temperatu
     <!-- </div> -->
   </section>
   <section
-    class="container is-widescreen mb-6 has-text-left"
+    class="container is-widescreen notification mb-6 has-text-left"
   >
     <div class="container">
       <div class="columns is-vcentered has-text-justified">
