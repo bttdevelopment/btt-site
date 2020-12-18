@@ -4,6 +4,7 @@
 <video-background
     :src="require(`./assets/brain1.mp4`)"
     v-if="isHome"
+    style="height: 100vh;"
   >
     <TheHero :heroFull="true" heroTitle="Brain Tunnelgenix Technologies"/>
 </video-background>
