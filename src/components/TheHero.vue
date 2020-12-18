@@ -3,6 +3,7 @@
     id="bttHero"
     class="hero btt-border-radius-l"
     :class="{ 'is-fullheight': heroFull }"
+    :style=" heroFull ? {'background-image': 'none'} : {'background-image': `url(../assets/` + heroBackgroundImage + `)`}"
   >
     <div class="hero-head">
       <!-- <TopBar /> -->
@@ -53,16 +54,17 @@ export default {
   },
   props: {
     heroFull: Boolean,
-    heroTitle: String
+    heroTitle: String,
+    heroBackgroundImage: String
   }
 };
 </script>
 <style>
 .hero {
-  /* background-image: url("../assets/herohome.png");
+  background-image: url('../assets/green_hippocampus.png') !important;
   background-position: left;
   background-size: cover;
-  background-repeat: no-repeat; */
+  background-repeat: no-repeat;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   height: 300px;
@@ -95,11 +97,8 @@ export default {
   background-repeat: no-repeat;
   padding: 1em 0 1em 1em;
 }
-  .hero-body h1 {
-    background-color: none !important;
-  
-  }
-.hero-body .column {
+
+.is-fullheight .column {
   background-color: rgba(0, 0, 0, 0.5);
 }
 

@@ -8,12 +8,12 @@
   >
     <TheHero :heroFull="true" heroTitle="Brain Tunnelgenix Technologies"/>
 </video-background>
-  <TheHero v-else :heroFull="false" :heroTitle="this.heroTitle"/>
+  <TheHero v-else :heroFull="false" :heroTitle="this.heroTitle" :heroBackgroundImage="this.heroBackgroundImage"/>
   </transition>
   <!-- <transition name="fade" mode="out-in">
     <router-view />
   </transition> -->
-    <transition name="fade">
+    <transition name="fade" mode="out-in">
         <router-view></router-view>
     </transition>
 
@@ -32,7 +32,8 @@ export default {
     return {
       isHome: Boolean,
       heroFull: null,
-      heroTitle: "Brain Tunnelgenix Technologies"
+      heroTitle: "Brain Tunnelgenix Technologies",
+      heroBackgroundImage: null
     }
   },
   watch: {
@@ -47,6 +48,7 @@ export default {
         // this.heroMedium = true;
         if (to.name == "about") {
           this.heroTitle = "About Us";
+          this.heroBackgroundImage = "herohome.png"
         } else if (to.name == "medicalInstite") {
           this.heroTitle = "BTT Biomedical and Research Institute";
         } else if (to.name == "researchPublication") {

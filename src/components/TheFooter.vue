@@ -22,7 +22,7 @@
               <ul>
 
                 <li>
-                  <router-link to="/our-company">Our Company</router-link>
+                  <router-link to="/our_company">Our Company</router-link>
                 </li>
                 <li>
                   <router-link to="/medical-institute">BTT Medical Institute</router-link>
