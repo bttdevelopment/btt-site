@@ -61,7 +61,7 @@ export default {
 </script>
 <style>
 .hero {
-  background-image: url('../assets/green_hippocampus.png') !important;
+  /* background-image: url('../assets/green_hippocampus.png') !important; */
   background-position: left;
   background-size: cover;
   background-repeat: no-repeat;
