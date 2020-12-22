@@ -2,7 +2,7 @@
   <transition name="slide-up">
 
 <video-background
-    :src="require(`./assets/neuronsloop1.mp4`)"
+    :src="require(`./assets/brainloop1.mp4`)"
     v-if="isHome"
     style="height: 100vh;"
   >
