@@ -4,7 +4,7 @@
       <div id="navbar-brand" class="navbar-brand" style="margin-left: 0;">
         <div id="brand-logo-container">
         <router-link to="/"
-          ><img class="ml-3 mt-1" src="../assets/bttlogo_text_gradient.png"
+          ><img class="ml-3 mt-1" src="../assets/bttlogo_original.png"
         /></router-link>
         </div>
         <a
@@ -28,28 +28,47 @@
           class="navbar-start"
           style="flex-grow: 1; justify-content: center;"
         >
-          <div class="navbar-item">
-            <router-link to="/our_company">About Us</router-link>
-          </div>
-          <div class="navbar-item">
-            <router-link to="/research-publication"
+          <!-- <div class="navbar-item"> -->
+            <router-link class="navbar-item" to="/our_company">About Us</router-link>
+          <!-- </div> -->
+          <!-- <div class="navbar-item"> -->
+            <router-link class="navbar-item" to="/research-publication"
               >Research, Publications</router-link
             >
+          <!-- </div> -->
+          <div class="navbar-item has-dropdown is-hoverable">
+            <div class="navbar-link is-arrowless">Media</div>
+              <div class="navbar-dropdown">
+                <div class="navbar-item">Media Coverage</div>
+                <div class="navbar-item">News</div>
+              </div>
           </div>
-          <div class="navbar-item">
-            <router-link to="/news">Media</router-link>
-          </div>
-          <div class="navbar-item">
-            <router-link to="contact">Contact Us</router-link>
-          </div>
+          <!-- <div class="navbar-item"> -->
+            <router-link class="navbar-item" to="contact">Contact Us</router-link>
+          <!-- </div> -->
         </div>
         <div class="navbar-end">
-          <div class="navbar-item">
-            <router-link to="/medical-institute">
-              <button class="button is-rounded is-bttgreen is-outlined">
-               Medical Institute
-              </button>
+          <div class="navbar-item has-dropdown is-right is-hoverable">
+            <router-link class="navbar-link is-arrowless" to="/medical-institute">
+               <span class="icon-text">
+                <span class='mr-1'>BTT™ BioMedical, Research Institute</span>  
+                <span class="icon is-medium"><i class="fas fa-bars"></i></span>
+               </span>
             </router-link>
+            <div class="navbar-dropdown">
+              <div class="navbar-item">
+                Our Institute
+              </div>
+              <hr class="navbar-divider">
+              <div class="navbar-item">
+                Neurological Diseases
+              </div>
+              <hr class="navbar-divider">
+              <div class="navbar-item">
+                Infectious Diseases
+              </div>
+              <hr class="navbar-divider">
+            </div>
           </div>
         </div>
       </div>
@@ -72,16 +91,14 @@ export default {
 };
 </script>
 <style>
-nav a.router-link-exact-active {
-  color:#f35e19;
-}
+
 .hero .navbar {
-  background-color: white !important;
-}
-nav a {
-  color: #008f89;
+  background-color: rgba(255, 255, 255, .9) !important;
 }
 
+.navbar-item, .navbar-link {
+  color: #008f89 !important;
+}
 nav a img {
   max-height: 33px;
 }

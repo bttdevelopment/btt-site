@@ -10,13 +10,13 @@
       <NavigationBar />
     </div>
     <div id="hero-body" class="hero-body">
-      <div class="container has-text-left has-text-white">
+      <div class="container has-text-left has-text-bttblue">
         <div class="columns">
           <div class="column is-7 is-offset-1">
             <transition name="slide-fade" mode="out-in">
               <h1
                 class="title"
-                :class="{ 'has-text-white': heroFull, 'has-text-bttgreen': !heroFull }"
+                :class="{ 'has-text-bttblue': heroFull, 'has-text-bttgreen': !heroFull }"
                 :key="$route.path"
               >
                 {{ heroTitle }}
@@ -29,10 +29,10 @@
               <ul class="block">
                 <li>to track human brain temparature</li>
                 <li>to detect infectious diseases</li>
-                <li>to treat neorodegenerative disease through the <strong>Brain Thermal Tunnel</strong></li>
+                <li>to treat neorodegenerative disease through the <strong class="has-text-bttblue">Brain Thermal Tunnel</strong></li>
               </ul>
             <p>
-              Our Mission: <strong>Protect, Preserve, Prolong Life</strong>
+              Our Mission: <strong class="has-text-bttblue">Protect, Preserve, Prolong Life</strong>
             </p>
             </div>
           </div>
@@ -74,7 +74,7 @@ export default {
   font-weight:550;
 }
 .column .title {
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-size: 3rem;
 }
 .slide-fade-enter-active {
@@ -99,7 +99,7 @@ export default {
 }
 
 .is-fullheight .column {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 p strong, ul strong {

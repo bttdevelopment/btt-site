@@ -2,9 +2,10 @@
   <transition name="slide-up">
 
 <video-background
-    :src="require(`./assets/brainloop1.mp4`)"
+    :src="require(`./assets/brain.mp4`)"
     v-if="isHome"
     style="height: 100vh;"
+    :loop="false"
   >
     <TheHero :heroFull="true" heroTitle="Brain Tunnelgenix Technologies"/>
 </video-background>
@@ -65,7 +66,7 @@ export default {
 </script>
 <style>
 #app {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Raleway", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

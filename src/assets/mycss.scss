@@ -3,13 +3,15 @@
 @import "~bulma/sass/utilities/_all";
 
 // Set your colors
-$navbar-item-color: $white;
 $primary: #8c67ef;
 $primary-light: findLightColor($primary);
 $primary-dark: findDarkColor($primary);
 $primary-invert: findColorInvert($primary);
 $bttgreen: #169E78;
 $bttgreen-invert: findColorInvert($bttgreen);
+$bttblue: #008f89;
+$bttblue-invert: findColorInvert($bttblue);
+$navbar-dropdown-arrow: $bttgreen;
 
 // Lists and maps
 $custom-colors: null !default;
@@ -60,13 +62,14 @@ $colors: mergeColorMaps(("white": ($white,
         ),
         "bttgreen": ( $bttgreen,
         $bttgreen-invert,
-        )
+        ),
+        "bttblue": ($bttblue,
+        $bttblue-invert)
     ),
     $custom-colors);
 
 // Links
-$link-invert: $primary-invert;
-$link-focus-border: $primary;
+
 
 //============MYCSS============
 .btt-gradient-background-vertical {
@@ -102,8 +105,13 @@ $link-focus-border: $primary;
     margin-left:min(15px, 5%);
     margin-right:min(15px, 5%);
 }
+#brand-logo-container a {
+    background-color:transparent !important;
+}
 
+nav a.router-link-exact-active {
+    background-color: #169E7850
+}
 
 // Import Bulma and Buefy styles
 @import "~bulma";
-@import "~buefy/src/scss/buefy";
