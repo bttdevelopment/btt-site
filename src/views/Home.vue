@@ -97,7 +97,7 @@ export default {
 </script>
 <style scoped>
   .btt-hippocampus-img{
-    background-image: url("../assets/green_hippocampus.png");
+    background-image: url("../assets/herohome.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

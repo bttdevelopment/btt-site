@@ -5,7 +5,7 @@
     :src="require(`./assets/brain.mp4`)"
     v-if="isHome"
     style="height: 100vh;"
-    :loop="false"
+    :loop="true"
   >
     <TheHero :heroFull="true" heroTitle="Brain Tunnelgenix Technologies"/>
 </video-background>

@@ -3,7 +3,7 @@
     id="bttHero"
     class="hero btt-border-radius-l"
     :class="{ 'is-fullheight': heroFull }"
-    :style=" heroFull ? {'background-image': 'none'} : {'background-image': `url(../assets/` + heroBackgroundImage + `)`}"
+    :style=" heroFull ? {'background-image': 'none'} : backgroundSelector"
   >
     <div class="hero-head">
       <!-- <TopBar /> -->
@@ -56,12 +56,19 @@ export default {
     heroFull: Boolean,
     heroTitle: String,
     heroBackgroundImage: String
+  },
+  computed: {
+    backgroundSelector() {
+      return {
+        backgroundImage: "url(../assets/" + this.heroBackgroundImage + ")"
+      }
+      
+    }
   }
 };
 </script>
 <style>
 .hero {
-  /* background-image: url('../assets/green_hippocampus.png') !important; */
   background-position: left;
   background-size: cover;
   background-repeat: no-repeat;
