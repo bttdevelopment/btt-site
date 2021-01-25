@@ -1,23 +1,39 @@
 <template>
   <section class="container is-widescreen mb-6 mt-6 has-text-left">
     <!-- <div class="container is-widescreen btt-margin has-text-left"> -->
-      <div class="container is-fluid">
-        <h2 class="title has-text-bttgreen">
-          Brain Tunnelgenix Technologies, Corp.
-        </h2>
+    <div class="block has-text-centered mb-6">
+      <h2 class="title has-text-bttgreen">
+        Brain Tunnelgenix Technologies, Corp.
+      </h2>
+    </div>
+    <div class="container is-fluid">
+      <div class="container parallax-bg">
         <div class="columns">
-        <div class=" text-indented column">
-          We are a MedTech company with a large portfolio of intellectual property based on Dr. Marc Abreu’s game-changing biological discovery, the brain thermal tunnel. The brain thermal tunnel is a bidirectional, insulated, pathway between the surface of the body, at the superomedial orbit, and the hypothalamus, our bodies thermal regulator. This discovery enables us to measure brain temperature continuously and noninvasively.
- 
-Our discovery allows us for the first time in history to measure brain temperature, as opposed to body temperature, giving us unparalleled insight into the understanding of the brain and its functionality.  The brain, a thermodynamic engine, is one of the last frontiers of science and we are on the precipice of understanding it in new and exciting ways.
-        </div>
-        <div class="column">
+          <div class="column is-11 is-offset-1 parallax-bg-item">
 
+          </div>
         </div>
-
-        </div>
-        <!-- <div class="block"></div> -->
       </div>
+      <div class="container">
+        <div class="columns">
+          <div class=" text-indented column is-four-fifths">
+            We are a MedTech company with a large portfolio of intellectual
+            property based on Dr. Marc Abreu’s game-changing biological
+            discovery, the brain thermal tunnel. The brain thermal tunnel is a
+            bidirectional, insulated, pathway between the surface of the body,
+            at the superomedial orbit, and the hypothalamus, our bodies thermal
+            regulator. This discovery enables us to measure brain temperature
+            continuously and noninvasively. Our discovery allows us for the
+            first time in history to measure brain temperature, as opposed to
+            body temperature, giving us unparalleled insight into the
+            understanding of the brain and its functionality. The brain, a
+            thermodynamic engine, is one of the last frontiers of science and we
+            are on the precipice of understanding it in new and exciting ways.
+          </div>
+        </div>
+      </div>
+      <!-- <div class="block"></div> -->
+    </div>
     <!-- </div> -->
   </section>
   <section
@@ -109,5 +125,13 @@ export default {
   }
   .text-indented {
     text-indent: 2em;
+}
+.parallax-bg{
+  position: absolute;
+}
+
+.parallax-bg-item{
+  height: 50vh;
+  background-color: greenyellow;
 }
 </style>
