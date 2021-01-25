@@ -93,7 +93,7 @@ export default {
 <style>
 
 .hero .navbar {
-  background-color: rgba(255, 255, 255, .9) !important;
+  background-color: rgba(255, 255, 255) !important;
 }
 
 .navbar-item, .navbar-link {

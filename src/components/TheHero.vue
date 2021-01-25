@@ -2,8 +2,7 @@
     <section
     id="bttHero"
     class="hero btt-border-radius-l"
-    :class="{ 'is-fullheight': heroFull }"
-    :style=" heroFull ? {'background-image': 'none'} : backgroundSelector"
+    :class="[{ 'is-fullheight': heroFull }, heroBackgroundSelector]"
   >
     <div class="hero-head">
       <!-- <TopBar /> -->
@@ -46,8 +45,19 @@
 // import TopBar from "./TopBar";
 import NavigationBar from "./NavigationBar";
 
+
 export default {
   name: "Hero",
+  data() {
+    return {
+      heroBackground: {
+        atAboutUs: false,
+        atMedical: false,
+        atMedia: false,
+        atResearch: false
+      }
+    }
+  },
   components: {
     // TopBar,
     NavigationBar
@@ -58,13 +68,17 @@ export default {
     heroBackgroundImage: String
   },
   computed: {
-    backgroundSelector() {
-      return {
-        backgroundImage: "url(../assets/" + this.heroBackgroundImage + ")"
+    heroBackgroundSelector: function() {
+      var key
+        for (const property in this.heroBackground) {
+          if (property == this.heroBackgroundImage) { 
+            // this.heroBackground[property] = true;
+           console.log(`${property}: ${this.heroBackground[property]}`);
+          }
+        }
+        return key
       }
-      
     }
-  }
 };
 </script>
 <style>
@@ -76,7 +90,20 @@ export default {
   border-top-right-radius: 0;
   height: 300px;
 }
-.hero-text{
+.about-background {
+  background-image: url("../assets/herohome.png");
+}
+.media-background {
+  background-image: url("../assets/herohome.png");
+}
+.medical-background {
+  background-image: url("../assets/herohome.png");
+}
+.research-background {
+  background-image: url("../assets/herohome.png");
+}
+
+.hero-text {
   font-size:1.2em;
   font-weight:550;
 }
@@ -96,13 +123,6 @@ export default {
 .slide-fade-leave-to {
   transform: translateX(20px);
   opacity: 0;
-}
-#abstract-bg {
-  background-image: url("../assets/abstract.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 1em 0 1em 1em;
 }
 
 .is-fullheight .column {
