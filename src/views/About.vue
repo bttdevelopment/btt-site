@@ -1,5 +1,5 @@
 <template>
-  <section class="mb-6">
+  <section class="section mb-6">
     <div class="container has-text-left">
       <h2 class="title is-2 has-text-centered">Leadership</h2>
       <div class="columns">

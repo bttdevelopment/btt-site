@@ -13,7 +13,8 @@ $bttblue: #008f89;
 $bttblue-invert: findColorInvert($bttblue);
 $navbar-dropdown-arrow: $bttgreen;
 $navbar-item-hover-background-color: hsl(180, 20%, 96%);
-
+$button-border-width: 2px;
+$button-border-color: $bttblue;
 // Lists and maps
 $custom-colors: null !default;
 $custom-shades: null !default;
@@ -112,6 +113,18 @@ $colors: mergeColorMaps(("white": ($white,
 
 nav a.router-link-exact-active {
     background-color: #169E7850
+}
+
+.light-brown-bg {
+    background-color: #fbfbf4;
+}
+
+.extra-padding {
+    padding: 50px !important;
+}
+
+.subtitle {
+    font-family: "Work Sans", sans-serif;
 }
 
 // Import Bulma and Buefy styles
