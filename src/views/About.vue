@@ -46,11 +46,12 @@
     </figure>
           <div class="content">
             <div class="block mt-4">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
-              incidunt odit voluptatem quod consequatur recusandae nemo optio et
-              amet quam modi praesentium itaque adipisci porro aliquam, nostrum
-              ipsam beatae vero.
-            </div>
+          <p class="block">Rob Mogel is Brain Tunnelgenix Technologies Corp.’s Director of Strategy and Business Development.</p>
+          <p class="block">Mogel heads BTT™ Corp.’s corporate strategy and business development activities, including strategic partnerships, mergers and acquisitions, new business opportunities and other critical strategic initiatives. Mogel sets the strategic course for company’s internal and external operations.  Responsible for identifying, developing and implementing new business development, running strategic deal negotiations, emerging product launch, pricing and optimizing market penetration for our new and existing products for the corporation as well as the BTT™ Biomedical and Research Institute.</p>
+          <p class="block">An experienced leader with over 30 years leading both domestic and international corporations, Mogel most recently served as COO of Silipos. Mogel received his Master’s degree in International Affairs from Columbia University.</p>
+          <p class="block">He is fluent in French, Spanish, and proficient in Portuguese and German.</p>
+
+        </div>
           </div>
         </div>
       </div>
@@ -88,8 +89,8 @@
       
     <div class="card">
   <div class="card-image">
-    <figure class="image is-4by3">
-      <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+    <figure class="image is-square">
+      <img src="https://bulma.io/images/placeholders/480x480.png" alt="Placeholder image">
     </figure>
   </div>
   <div class="card-content">
@@ -109,8 +110,8 @@
       
     <div class="card">
   <div class="card-image">
-    <figure class="image is-4by3">
-      <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+    <figure class="image is-square">
+      <img src="https://bulma.io/images/placeholders/480x480.png" alt="Placeholder image">
     </figure>
   </div>
   <div class="card-content">
