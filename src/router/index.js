@@ -58,10 +58,16 @@ const routes = [
   },
   {
     path:"/news",
-    name: "newsMedia",
+    name: "news",
     component: () =>
-      import(/* webpackChunkName: "media" */ "../views/NewsMedia.vue")
+      import(/* webpackChunkName: "news" */ "../views/TheNews.vue")
   },
+  {
+    path:"/media",
+    name: "media",
+    component: () =>
+      import(/* webpackChunkName: "media" */ "../views/TheMedia.vue")
+  }
 ];
 
 const router = createRouter({

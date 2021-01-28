@@ -83,6 +83,7 @@ export default {
 </script>
 <style>
 .hero {
+  background-image: url("../assets/medical-partners.jpg");
   background-position: left;
   background-size: cover;
   background-repeat: no-repeat;
@@ -107,7 +108,7 @@ export default {
   font-size:1.2em;
   font-weight:550;
 }
-.column .title {
+.column .title, h5 {
   font-family: "Work Sans", sans-serif;
   font-size: 3rem;
 }
@@ -129,7 +130,8 @@ export default {
   background-color: rgba(255, 255, 255, 0.9);
 }
 
-p strong, ul strong {
+.herofull strong,
+ul strong {
   color:white;
 }
 </style>

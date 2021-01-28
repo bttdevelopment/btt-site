@@ -39,8 +39,11 @@
           <div class="navbar-item has-dropdown is-hoverable">
             <div class="navbar-link is-arrowless">Media</div>
               <div class="navbar-dropdown">
-                <div class="navbar-item">Media Coverage</div>
-                <div class="navbar-item">News</div>
+                <router-link class="navbar-item" to="media"
+              >Media Coverage</router-link>
+              
+                <router-link class="navbar-item" to="news"
+              >News</router-link>
               </div>
           </div>
           <!-- <div class="navbar-item"> -->

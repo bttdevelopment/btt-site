@@ -22,7 +22,7 @@
     </figure>
         </div>
       </div>
-      <div class="container ml-6">
+      <div class="container notification has-text-justified ml-5 mr-5 has-background-bttblue-light">
         <h5 class="title is-5">
           <strong>Professional Accomplishments and Achievements: </strong>
         </h5>
@@ -66,7 +66,7 @@
     <div class="columns">
       <div class="column is-one-third">
       
-    <div class="card">
+    <div class="card is-shadowless has-background-info-light">
   <div class="card-image">
     <figure class="image is-square">
       <img src="https://bulma.io/images/placeholders/480x480.png" alt="Placeholder image">
@@ -87,7 +87,7 @@
 </div>
 <div class="column is-one-third">
       
-    <div class="card">
+    <div class="card is-shadowless has-background-primary-light">
   <div class="card-image">
     <figure class="image is-square">
       <img src="https://bulma.io/images/placeholders/480x480.png" alt="Placeholder image">
@@ -108,7 +108,7 @@
 </div>
 <div class="column is-one-third">
       
-    <div class="card">
+    <div class="card is-shadowless has-background-info-light">
   <div class="card-image">
     <figure class="image is-square">
       <img src="https://bulma.io/images/placeholders/480x480.png" alt="Placeholder image">

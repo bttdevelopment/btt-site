@@ -3,14 +3,18 @@
 @import "~bulma/sass/utilities/_all";
 
 // Set your colors
-$primary: #8c67ef;
+$primary: hsl(171, 100%, 41%);
 $primary-light: findLightColor($primary);
 $primary-dark: findDarkColor($primary);
 $primary-invert: findColorInvert($primary);
 $bttgreen: #169E78;
 $bttgreen-invert: findColorInvert($bttgreen);
+$bttgreen-dark: findDarkColor($bttgreen);
+$bttgreen-light: findLightColor($bttgreen);
 $bttblue: #008f89;
 $bttblue-invert: findColorInvert($bttblue);
+$bttblue-dark: findDarkColor($bttblue);
+$bttblue-light: findLightColor($bttblue);
 $navbar-dropdown-arrow: $bttgreen;
 $navbar-item-hover-background-color: hsl(180, 20%, 96%);
 $button-border-width: 2px;
@@ -64,9 +68,13 @@ $colors: mergeColorMaps(("white": ($white,
         ),
         "bttgreen": ( $bttgreen,
         $bttgreen-invert,
+        $bttgreen-light,
+        $bttgreen-dark
         ),
         "bttblue": ($bttblue,
-        $bttblue-invert)
+        $bttblue-invert,
+        $bttblue-light,
+        $bttblue-dark)
     ),
     $custom-colors);
 

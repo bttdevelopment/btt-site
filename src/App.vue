@@ -61,6 +61,10 @@ export default {
           this.heroBackgroundImage = "atMedia"
         } else if (to.name == "contact") {
           this.heroTitle = "Contact Us";
+        } else if (to.name == "news") {
+          this.heroTitle = "News";
+        } else if (to.name == "media") {
+          this.heroTitle = "Media Coverage";
         }
       }
     }
