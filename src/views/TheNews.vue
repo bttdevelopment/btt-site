@@ -1,6 +1,7 @@
 <template>
   <section class="section has-text-left">
     <div class="container is-max-desktop">
+      <h2 class="title is-2">BTT On The News</h2>
       <div class="box notification is-shadowless has-background-bttgreen-light">
         <article class="media">
     <div class="media-left">

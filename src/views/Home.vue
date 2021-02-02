@@ -1,12 +1,12 @@
 <template>
-  <section class="section is-widescreen mb-6 mt-6 has-text-left">
+  <section class="section is-widescreen mb-6 mt-4 has-text-left">
     <!-- <div class="container is-widescreen btt-margin has-text-left"> -->
     <div class="block has-text-centered">
-      <h2 class="title has-text-bttgreen">
+      <h2 class="title has-text-bttgreen" style="margin-bottom:2em;">
         Brain Tunnelgenix Technologies, Corp.
       </h2>
     </div>
-    <div class="container is-fluid">
+    <div class="container is-fluid mb-6">
       <div class="container parallax-bg">
           <div class="column parallax-bg-item">
 
@@ -37,7 +37,8 @@
     </div>
   </section>
   <section
-    class="container is-widescreen notification mb-6 has-text-left"
+    id="parallax"
+    class="container is-widescreen notification mb-4 has-text-left"
   >
     <div class="container">
       <div class="columns is-vcentered has-text-justified">
@@ -119,7 +120,7 @@ export default {
 <style scoped>
   .btt-hippocampus-img{
     background-image: url("../assets/green_hippocampus.png");
-    background-position: 0 100%;
+    background-position: 10% 100%;
     background-attachment: fixed;
     background-size: auto;
     background-repeat: no-repeat;
@@ -133,13 +134,16 @@ export default {
   width: 100%;
 
 }
-
+#parallax {
+  padding:1.25rem;
+}
 .parallax-bg-item{
   height: 50vh;
   width: 100%;
   margin-left: 20%;
   margin-top: 10%;
   background-color: grey;
+  min-height: 500px;
 }
 @media (max-width: 1000px) {
 
