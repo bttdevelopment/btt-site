@@ -6,15 +6,15 @@
         Brain Tunnelgenix Technologies, Corp.
       </h2>
     </div>
-    <div class="container is-fluid mb-6">
+    <div class="container mb-6 is-max-widescreen">
       <div class="container parallax-bg">
           <div class="column parallax-bg-item">
 
           </div>
       </div>
-      <div class="container">
+      <div class="container is-max-widescreen">
         <div class="columns is-vcentered has-text-justified">
-          <div class="column is-7 is-offset-1 light-brown-bg extra-padding">
+          <div class="column is-12 has-background-bttblue-light extra-padding bttshadow">
             <h4 class="title is-4">Who we are</h4>
             <p class="text-indented">
             We are a MedTech company with a large portfolio of intellectual
@@ -38,9 +38,9 @@
   </section>
   <section
     id="parallax"
-    class="container is-widescreen notification mb-4 has-text-left"
+    class="section mb-4 has-text-left"
   >
-    <div class="container">
+    <div class="container notification has-background-bttgreen-light is-max-widescreen">
       <div class="columns is-vcentered has-text-justified">
           <div class="column btt-hippocampus-img">
         </div>
@@ -57,12 +57,13 @@ If you are interested in learning more about the disorders, we diagnosis and tre
       </div>
     </div>
   </section>
-  <section class="section is-widescreen mb-6  has-text-left">
+  <section class="section is-max-desktop mb-6  has-text-left">
     <!-- <div class="container is-widescreen btt-margin has-text-left"> -->
-      <div class="container is-fluid mb-6">
+      <div class="container is-max-widescreen mb-6">
         <h2 class="title has-text-centered mt-6 mb-6 has-text-bttgreen">
           BTT™ Products
         </h2>
+        <div class="content mb-6">
         <h5 class="subtitle">
           BTT™ Intelligent Wearables
         </h5>
@@ -79,9 +80,11 @@ If you are interested in learning more about the disorders, we diagnosis and tre
         include multiple other virus detection.<br />
         </div>
         <div class="block">Our tracker has the distinct advantage of being able to detect exposure before symptoms arise, thus helping to contain contagion of this deadly virus.</div>
-        
-      </div>
-      <div class="container is-fluid mb-6">
+        <figure class="image is-2by1">
+  <img src="https://bulma.io/images/placeholders/640x320.png">
+</figure>
+        </div>
+        <div class="content mb-6">
         <h5 class="subtitle">
           BTT™ Intelligent Glasses
         </h5>
@@ -94,8 +97,11 @@ If you are interested in learning more about the disorders, we diagnosis and tre
         Wearables are paired with our BTT™ Health App, continually monitoring and storing your brain temperature and wave pattern information in the Cloud, ready to detect COVID-19 or any other mRNA virus.    
         </div>
         <div class="block">Our tracker has the distinct advantage of being able to detect exposure before symptoms arise, thus helping to contain contagion of this deadly virus.</div>
-      </div>
-        <div class="container is-fluid mb-6">
+        <figure class="image is-2by1">
+  <img src="https://bulma.io/images/placeholders/640x320.png">
+</figure>
+        </div>
+        <div class="content">
         <h5 class="subtitle">
           BTT™ Intelligent Nose Clip
         </h5>
@@ -107,7 +113,10 @@ Much like the BTT™ Intelligent glasses the BTT™ Intelligent Nose Clip rests 
         These sensors continuously read information (thermal signatures) from the brain, and our software is programmed to identify characteristic fluctuations in brain wave patterns related to COVID-19 (or any other mRNA virus). When this thermal signature is detected, the user wearing the device will be alerted via their cell phone so he or she can act immediately to self-isolate and seek treatment.
         </div>
         <div class="block">Our tracker has the distinct advantage of being able to detect exposure before symptoms arise, thus helping to contain contagion of this deadly virus.</div>
-        
+        <figure class="image is-2by1">
+  <img src="https://bulma.io/images/placeholders/640x320.png">
+</figure>
+        </div>
       </div>
     <!-- </div> -->
   </section>
@@ -142,9 +151,17 @@ export default {
   width: 100%;
   margin-left: 20%;
   margin-top: 10%;
-  background-color: grey;
+  background-image: url("../assets/thermo_square.jpg");
+  background-attachment: fixed;
+  background-size: contain;
+  /* background-repeat: no-repeat; */
   min-height: 500px;
 }
+
+.bttshadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
 @media (max-width: 1000px) {
 
       .parallax-bg {

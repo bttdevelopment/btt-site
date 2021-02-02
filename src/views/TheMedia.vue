@@ -114,7 +114,7 @@ Conducting training using the BTT™
         <div class="tile is-parent is-2">
           <div class="tile is-child  box notification is-info " style="padding-left:15px; padding-right:15px">
               <h5 class="title is-4">
-              North America
+              Asia
               </h5>
           </div>
         </div>
