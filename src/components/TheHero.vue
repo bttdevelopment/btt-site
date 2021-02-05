@@ -91,19 +91,6 @@ export default {
   border-top-right-radius: 0;
   height: 300px;
 }
-.about-background {
-  background-image: url("../assets/herohome.png");
-}
-.media-background {
-  background-image: url("../assets/herohome.png");
-}
-.medical-background {
-  background-image: url("../assets/herohome.png");
-}
-.research-background {
-  background-image: url("../assets/herohome.png");
-}
-
 .hero-text {
   font-size:1.2em;
   font-weight:550;

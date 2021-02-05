@@ -22,7 +22,8 @@ $button-border-color: $bttblue;
 // Lists and maps
 $custom-colors: null !default;
 $custom-shades: null !default;
-
+$title-color: #096047;
+$subtitle-color: #096047;
 // Setup $colors to use as bulma classes (e.g. 'is-twitter')
 $colors: mergeColorMaps(("white": ($white,
             $black,
@@ -99,6 +100,9 @@ $colors: mergeColorMaps(("white": ($white,
     border-radius: 4rem;
 }
 
+.bttgreen-dark {
+    color:#096047;
+}
 
 .navbar-menu {
     margin-right: 0 !important;
@@ -120,7 +124,7 @@ $colors: mergeColorMaps(("white": ($white,
 }
 
 nav a.router-link-exact-active {
-    background-color: #169E7850
+    background-color: #f3f7f7
 }
 
 .extra-padding {
@@ -129,6 +133,10 @@ nav a.router-link-exact-active {
 
 .subtitle {
     font-family: "Work Sans", sans-serif;
+}
+
+.text-indented{
+    text-indent:2em;
 }
 
 // Import Bulma and Buefy styles

@@ -1,6 +1,6 @@
 <template>
     <section class="section">
-        <div class="container has-text-left is-desktop">
+        <div class="container has-text-left has-text-dark is-desktop">
             <div class="block mb-6">
             <h2 class="has-text-left title is-2">Dr. Abreu Papers 1-4</h2>
             </div>
@@ -55,7 +55,7 @@
         </div>
     </section>
   <section class="section">
-    <div class="container has-text-left is-desktop">
+    <div class="container has-text-left is-desktop has-text-dark">
       <div class="block mb-6">
         <h2 class="has-text-left title is-2">Other General Papers</h2>
       </div>

@@ -29,6 +29,7 @@
           style="flex-grow: 1; justify-content: center;"
         >
           <!-- <div class="navbar-item"> -->
+            
             <router-link class="navbar-item" to="/our_company">About Us</router-link>
           <!-- </div> -->
           <!-- <div class="navbar-item"> -->
@@ -51,14 +52,14 @@
           <!-- </div> -->
         </div>
         <div class="navbar-end">
-          <div class="navbar-item has-dropdown is-right is-hoverable">
+          <div class="navbar-item is-right">
             <router-link class="navbar-link is-arrowless" to="/medical-institute">
                <span class="icon-text">
                 <span class='mr-1'>BTT™ BioMedical, Research Institute</span>  
-                <span class="icon is-medium"><i class="fas fa-bars"></i></span>
+                <!-- <span class="icon is-medium"><i class="fas fa-bars"></i></span> -->
                </span>
             </router-link>
-            <div class="navbar-dropdown">
+            <!-- <div class="navbar-dropdown">
               <div class="navbar-item">
                 Our Institute
               </div>
@@ -71,7 +72,7 @@
                 Infectious Diseases
               </div>
               <hr class="navbar-divider">
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
