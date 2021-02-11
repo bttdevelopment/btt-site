@@ -1,5 +1,5 @@
 <template>
-  <section class="section is-widescreen mb-6 mt-4 has-text-left">
+  <section class="section is-widescreen mt-4 has-text-left">
     <!-- <div class="container is-widescreen btt-margin has-text-left"> -->
     <div class="block has-text-centered">
       <h2 class="title has-text-bttgreen" style="margin-bottom:2em;">
@@ -9,6 +9,11 @@
     <div class="container mb-6 is-max-widescreen">
       <div class="container parallax-bg">
         <div class="column parallax-bg-item"></div>
+      </div>
+      <div class="container parallax-bg">
+        <figure class="image btt-decoration is-128x128">
+          <img src="https://bulma.io/images/placeholders/256x256.png">
+        </figure>
       </div>
       <div class="container is-max-widescreen">
         <div class="columns is-vcentered has-text-justified">
@@ -194,9 +199,8 @@ export default {
   /* background-repeat: no-repeat; */
   min-height: 500px;
 }
-
-.bttshadow {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+.btt-decorator {
+  
 }
 
 @media (max-width: 1000px) {
