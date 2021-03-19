@@ -73,7 +73,7 @@ export default {
 </script>
 <style>
 #app {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

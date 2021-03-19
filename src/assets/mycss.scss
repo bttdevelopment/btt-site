@@ -88,6 +88,10 @@ $colors: mergeColorMaps(("white": ($white,
     background: linear-gradient(0deg, #008f89 0%, #00924d 100%);
 }
 
+.btt-lightblue-bg {
+    background:#F0FBFF !important;
+}
+
 .btt-border-radius-s {
     border-radius: 0.9rem;
 }
@@ -131,7 +135,8 @@ nav a.router-link-exact-active {
     padding: 50px !important;
 }
 
-.subtitle {
+
+.subtitle, .title {
     font-family: "Work Sans", sans-serif;
 }
 

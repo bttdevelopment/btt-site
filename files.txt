@@ -1,3 +1,0 @@
-src/assets/brain1.mp4
-src/assets/brainloop1.mp4
-src/assets/neuronsloop1.mp4
