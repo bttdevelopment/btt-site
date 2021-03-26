@@ -90,7 +90,7 @@
         </p>
       </div>
     </div>
-    <div class="container is-max-desktop has-text-centered mt-6">
+    <div class="container is-max-desktop has-text-bttblue has-text-centered mt-6">
       <h1 class="subtitle is-1 has-text-bttblue">Patient Stories</h1>
       <carousel class="carousel-container" @next="next" @prev="prev">
         <carousel-slide
@@ -167,15 +167,11 @@ export default {
     min-height: 200px;
     
   }
-  .border-gradient-green {
-    border:10px solid;
-    border-image-source: linear-gradient(45deg,#169E78,  #008f89);
-  border-image-slice: 1;
-}
+
 
   .carousel-container {
-    border:10px solid;
-    border-image-source: linear-gradient(45deg,#008f89,  #169E78);
+    border:1px solid;
+    border-image-source: linear-gradient(45deg,#00fe84,  #00fefc);
   border-image-slice: 1;
   }
 </style>

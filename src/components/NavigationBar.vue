@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="container is-fullhd">
+    <div class="container is-widescreen">
       <div id="navbar-brand" class="navbar-brand" style="margin-left: 0;">
         <div id="brand-logo-container">
         <router-link to="/"

@@ -1,11 +1,11 @@
 <template>
     <div class="btt-carousel">
         <slot></slot>
-        <button @click="next" class="carousel-next"> <span class="icon">
-    <i class="fas fa-arrow-right"></i>
+        <button @click="next" class="button is-outlined carousel-next is-bttlightblue"> <span class="icon">
+    <i class="fas fa-lg fa-chevron-right"></i>
   </span> </button> 
-        <button @click="prev" class="carousel-prev"> <span class="icon">
-    <i class="fas fa-arrow-left"></i>
+        <button @click="prev" class="button is-outlined  is-bttlightgreen carousel-prev"> <span class="icon">
+    <i class="fas fa-lg fa-chevron-left"></i>
   </span></button>
     </div>
 </template>
@@ -32,20 +32,12 @@ export default {
         position: relative;
         height: 400px;
         overflow: hidden;
-        background-image: url("../assets/treatment.jpg");
-        background-attachment: fixed;
-        background-size: auto;
-        background-repeat: no-repeat;
-        background-position: 40% 0;
     }
     .btt-carousel button {
         position: absolute;
         height: 40px;
         width:40px;
         top: calc(50% - 20px);
-        background-color:#096047;
-        border: none;
-        color: #fff;
     }
 
     button:focus, button:hover {

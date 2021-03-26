@@ -11,18 +11,26 @@ $bttgreen: #169E78;
 $bttgreen-invert: findColorInvert($bttgreen);
 $bttgreen-dark: findDarkColor($bttgreen);
 $bttgreen-light: findLightColor($bttgreen);
+$bttlightgreen: #00fe84;
+$bttlightgreen-invert: findColorInvert($bttlightgreen);
+$bttlightgreen-dark: findDarkColor($bttlightgreen);
+$bttlightgreen-light: findLightColor($bttlightgreen);
+
 $bttblue: #008f89;
 $bttblue-invert: findColorInvert($bttblue);
 $bttblue-dark: findDarkColor($bttblue);
 $bttblue-light: findLightColor($bttblue);
+$bttlightblue: #00fefc;
+$bttlightblue-invert: findColorInvert($bttlightblue);
+$bttlightblue-dark: findDarkColor($bttlightblue);
+$bttlightblue-light: findLightColor($bttlightblue);
 $navbar-dropdown-arrow: $bttgreen;
 $navbar-item-hover-background-color: hsl(180, 20%, 96%);
-$button-border-width: 2px;
 $button-border-color: $bttblue;
 // Lists and maps
 $custom-colors: null !default;
 $custom-shades: null !default;
-$title-color: #096047;
+$title-color: $bttgreen;
 $subtitle-color: #096047;
 // Setup $colors to use as bulma classes (e.g. 'is-twitter')
 $colors: mergeColorMaps(("white": ($white,
@@ -75,7 +83,17 @@ $colors: mergeColorMaps(("white": ($white,
         "bttblue": ($bttblue,
         $bttblue-invert,
         $bttblue-light,
-        $bttblue-dark)
+        $bttblue-dark
+        ),
+        "bttlightgreen": ($bttlightgreen,
+            $bttlightgreen-invert,
+            $bttlightgreen-light,
+            $bttlightgreen-dark
+        ),
+        "bttlightblue": ($bttlightblue,
+            $bttlightblue-invert,
+            $bttlightblue-light,
+            $bttlightblue-dark)
     ),
     $custom-colors);
 

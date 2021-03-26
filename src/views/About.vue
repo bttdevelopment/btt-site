@@ -39,7 +39,7 @@
         <div class="column">
           <h3 class="title is-3">Rob Mogel</h3>
           <h5 class="subtitle is-5">
-            Director of Strategy and Business Development
+            President & CEO
           </h5>
           <figure class="image">
       <img class="photo-square" src="https://bulma.io/images/placeholders/480x480.png" alt="Placeholder image">
@@ -64,7 +64,28 @@
     </div>
   <div class="container">
     <div class="columns">
-      <div class="column is-one-third">
+      <div class="column is-quarter">
+      
+    <div class="card is-shadowless has-background-primary-light">
+  <div class="card-image">
+    <figure class="image is-square">
+      <img src="https://bulma.io/images/placeholders/480x480.png" alt="Placeholder image">
+    </figure>
+  </div>
+  <div class="card-content">
+    <p class="title is-4">Mio Rivera</p>
+    <p class="subtitle is-6">BSH</p>
+  </div>
+  <div class="card-content">
+
+    <div class="content is-size-7 has-text-justified">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus saepe alias explicabo enim consectetur repellat, quam error placeat molestiae rem ratione laboriosam illum cupiditate quis 
+
+    </div>
+  </div>
+</div>
+</div>
+      <div class="column is-quarter">
       
     <div class="card is-shadowless has-background-info-light">
   <div class="card-image">
@@ -73,19 +94,19 @@
     </figure>
   </div>
   <div class="card-content">
-    <p class="title is-4">Drew Singleton</p>
+    <p class="title is-4">Rachel LastName</p>
     <p class="subtitle is-6">BSH</p>
   </div>
   <div class="card-content">
 
-    <div class="content">
+    <div class="content is-size-7 has-text-justified">
       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus saepe alias explicabo enim consectetur repellat, quam error placeat molestiae rem ratione laboriosam illum cupiditate quis 
 
     </div>
   </div>
 </div>
 </div>
-<div class="column is-one-third">
+<div class="column is-quarter">
       
     <div class="card is-shadowless has-background-primary-light">
   <div class="card-image">
@@ -95,18 +116,26 @@
   </div>
   <div class="card-content">
     <p class="title is-4">Drew Singleton</p>
-    <p class="subtitle is-6">BSH</p>
+    <p class="subtitle is-6">MMS, Physician Assistant</p>
   </div>
   <div class="card-content">
 
-    <div class="content">
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus saepe alias explicabo enim consectetur repellat, quam error placeat molestiae rem ratione laboriosam illum cupiditate quis 
+    <div class="content is-size-7 has-text-justified">
+                As BTT Corp.’s Physician Assistant, Drew works closely with Dr.
+                Abreu in all aspects of patient care and clinical research. He
+                performs thorough medical exams, conducts cognitive and
+                functional assessments, assists with procedures, corresponds
+                with referring physicians, and contributes to research and
+                operational development. Drew holds a Master’s degree in Medical
+                Science from Nova Southeastern University and a Bachelor of
+                Science degree in Cognitive and Behavioral Neuroscience from the
+                University of Florida.
 
     </div>
   </div>
 </div>
 </div>
-<div class="column is-one-third">
+<div class="column is-quarter">
       
     <div class="card is-shadowless has-background-info-light">
   <div class="card-image">
@@ -115,12 +144,12 @@
     </figure>
   </div>
   <div class="card-content">
-    <p class="title is-4">Drew Singleton</p>
+    <p class="title is-4">Carolina Last Name</p>
     <p class="subtitle is-6">BSH</p>
   </div>
   <div class="card-content">
 
-    <div class="content">
+    <div class="content is-size-7 has-text-justified">
       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus saepe alias explicabo enim consectetur repellat, quam error placeat molestiae rem ratione laboriosam illum cupiditate quis 
 
     </div>
