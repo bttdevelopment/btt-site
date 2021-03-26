@@ -1,6 +1,6 @@
 <template>
 <transition :name="direction" mode="out-in">
-  <div v-show="visibleSlide === index" class="carousel-slide">
+  <div v-show="visibleSlide === index" class="carousel-slide is-size-4">
         <slot></slot>
     </div>
 </transition>
@@ -19,7 +19,7 @@ export default {
 <style>
     .carousel-slide {
         position:absolute;
-        top:29%;
+        top:15%;
         left:0;
         right:0;
     }

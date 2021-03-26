@@ -39,17 +39,19 @@
         <div class="column">
           <h3 class="title is-3">Rob Mogel</h3>
           <h5 class="subtitle is-5">
-            President & CEO
+            Chief Executive Officer
           </h5>
           <figure class="image">
       <img class="photo-square" src="https://bulma.io/images/placeholders/480x480.png" alt="Placeholder image">
     </figure>
           <div class="content">
             <div class="block mt-4">
-          <p class="block">Rob Mogel is Brain Tunnelgenix Technologies Corp.’s Director of Strategy and Business Development.</p>
-          <p class="block">Mogel heads BTT™ Corp.’s corporate strategy and business development activities, including strategic partnerships, mergers and acquisitions, new business opportunities and other critical strategic initiatives. Mogel sets the strategic course for company’s internal and external operations.  Responsible for identifying, developing and implementing new business development, running strategic deal negotiations, emerging product launch, pricing and optimizing market penetration for our new and existing products for the corporation as well as the BTT™ Biomedical and Research Institute.</p>
-          <p class="block">An experienced leader with over 30 years leading both domestic and international corporations, Mogel most recently served as COO of Silipos. Mogel received his Master’s degree in International Affairs from Columbia University.</p>
+          <p class="block">Robert Mogel is CEO and a board member at Brain Tunnelgenix Technologies™ Corp. (BTT™).</p>
+          <p class="block">BTT™ is a MedTech company that uses the power of the brain to offer products and solutions to treat some of the most difficult neurodegenerative diseases, Cancer, Diabetes, sleep related issues, and to enhance body wellness.</p>
+          <p class="block">Rob heads BTT™ Corp.’s corporate strategy and business development activities, including strategic partnerships, mergers and acquisitions, new business opportunities and other critical strategic initiatives. Mogel sets the strategic course for company’s internal and external operations. Responsible for identifying, developing and implementing new business development, running strategic deal negotiations, emerging product launch, pricing and optimizing market penetration for our new and existing products for the corporation as well as the BTT™ Biomedical and Research Institute.</p>
+          <p class="block">An experienced leader with over 30 years leading both domestic and international MedTech and medical device corporations, Mogel has worked with companies throughout Europe and South America.  Rob received his Master’s degree in International Affairs from Columbia University.</p>
           <p class="block">He is fluent in French, Spanish, and proficient in Portuguese and German.</p>
+
 
         </div>
           </div>
