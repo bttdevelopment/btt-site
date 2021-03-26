@@ -60,8 +60,8 @@
     </div>
     
   </section>
-  <section class="section">
-    <div class="block mb-6">
+  <section class="section fuck">
+    <!-- <div class="block mb-6">
       <h2 class="title is-2">Medical Team</h2>
     </div>
   <div class="container">
@@ -159,7 +159,7 @@
 </div>
 </div>
     </div>
-    </div>
+    </div> -->
   </section>
 </template>
 <style scoped>
