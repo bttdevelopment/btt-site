@@ -60,7 +60,7 @@
     </div>
     
   </section>
-  <section class="section fuck">
+  <!-- <section class="section fuck"> -->
     <!-- <div class="block mb-6">
       <h2 class="title is-2">Medical Team</h2>
     </div>
@@ -160,7 +160,8 @@
 </div>
     </div>
     </div> -->
-  </section>
+  <!-- </section> -->
+  <div>PIZDA</div>
 </template>
 <style scoped>
   #abreu-photo {
