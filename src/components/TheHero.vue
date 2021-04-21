@@ -2,7 +2,8 @@
     <section
     id="bttHero"
     class="hero btt-border-radius-l"
-    :class="[{ 'is-fullheight': heroFull }, heroBackgroundSelector]"
+    :style=" heroFull ? {'background-image': 'none'} : {'background-repeat': `no-repeat`}"
+    :class="{ 'is-fullheight': heroFull }"
   >
     <div class="hero-head">
       <!-- <TopBar /> -->
@@ -64,21 +65,8 @@ export default {
   },
   props: {
     heroFull: Boolean,
-    heroTitle: String,
-    heroBackgroundImage: String
-  },
-  computed: {
-    heroBackgroundSelector: function() {
-      var key
-        for (const property in this.heroBackground) {
-          if (property == this.heroBackgroundImage) { 
-            // this.heroBackground[property] = true;
-           console.log(`${property}: ${this.heroBackground[property]}`);
-          }
-        }
-        return key
-      }
-    }
+    heroTitle: String
+  }
 };
 </script>
 <style>

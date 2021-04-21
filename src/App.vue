@@ -9,7 +9,7 @@
   >
     <TheHero :heroFull="true" heroTitle="Brain Tunnelgenix Technologies"/>
 </video-background>
-  <TheHero v-else :heroFull="false" :heroTitle="this.heroTitle" :heroBackgroundImage="this.heroBackgroundImage"/>
+  <TheHero v-else :heroFull="false" :heroTitle="this.heroTitle"/>
   </transition>
   <!-- <transition name="fade" mode="out-in">
     <router-view />
@@ -49,16 +49,12 @@ export default {
         // this.heroMedium = true;
         if (to.name == "about") {
           this.heroTitle = "About Us";
-          this.heroBackgroundImage = "atAboutUs"
         } else if (to.name == "medicalInstite") {
           this.heroTitle = "BTT Biomedical and Research Institute";
-          this.heroBackgroundImage = "atMedical";
         } else if (to.name == "researchPublication") {
           this.heroTitle = "Research and Publications";
-          this.heroBackgroundImage = "atResearch"
         } else if (to.name == "newsMedia") {
           this.heroTitle = "News and Media";
-          this.heroBackgroundImage = "atMedia"
         } else if (to.name == "contact") {
           this.heroTitle = "Contact Us";
         } else if (to.name == "news") {
