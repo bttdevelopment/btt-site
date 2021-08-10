@@ -30,11 +30,20 @@
         >
           <!-- <div class="navbar-item"> -->
             
-            <router-link class="navbar-item" to="/our_company">About Us</router-link>
+            <router-link class="navbar-item" to="/our_company">About</router-link>
           <!-- </div> -->
           <!-- <div class="navbar-item"> -->
+            <router-link class="navbar-item" to="testimonials">Testimonials</router-link>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <router-link class="navbar-link is-arrowless" to="treatments">Treatments
+              </router-link>
+              <div class="navbar-dropdown">
+                <router-link class="navbar-item" to="/what-we-treat">What We Treat</router-link>
+                <router-link class="navbar-item" to="treatments">Treatment Methods</router-link>
+              </div>
+            </div>
             <router-link class="navbar-item" to="/research-publication"
-              >Research, Publications</router-link
+              >Publications</router-link
             >
           <!-- </div> -->
           <div class="navbar-item has-dropdown is-hoverable">
@@ -51,30 +60,7 @@
             <router-link class="navbar-item" to="contact">Contact Us</router-link>
           <!-- </div> -->
         </div>
-        <div class="navbar-end">
-          <div class="navbar-item is-right">
-            <router-link class="navbar-link is-arrowless" to="/medical-institute">
-               <span class="icon-text">
-                <span class='mr-1'>BTT™ BioMedical, Research Institute</span>  
-                <!-- <span class="icon is-medium"><i class="fas fa-bars"></i></span> -->
-               </span>
-            </router-link>
-            <!-- <div class="navbar-dropdown">
-              <div class="navbar-item">
-                Our Institute
-              </div>
-              <hr class="navbar-divider">
-              <div class="navbar-item">
-                Neurological Diseases
-              </div>
-              <hr class="navbar-divider">
-              <div class="navbar-item">
-                Infectious Diseases
-              </div>
-              <hr class="navbar-divider">
-            </div> -->
-          </div>
-        </div>
+        
       </div>
     </div>
   </nav>

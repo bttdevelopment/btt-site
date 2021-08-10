@@ -5,6 +5,7 @@
     :src="require(`./assets/brain.mp4`)"
     v-if="isHome"
     style="height: 100vh;"
+    :loop="false"
     
   >
     <TheHero :heroFull="true" heroTitle="Brain Tunnelgenix Technologies"/>
@@ -49,8 +50,8 @@ export default {
         // this.heroMedium = true;
         if (to.name == "about") {
           this.heroTitle = "About Us";
-        } else if (to.name == "medicalInstite") {
-          this.heroTitle = "BTT Biomedical and Research Institute";
+        } else if (to.name == "testimonials") {
+          this.heroTitle = "Patient Testimonials";
         } else if (to.name == "researchPublication") {
           this.heroTitle = "Research and Publications";
         } else if (to.name == "newsMedia") {
@@ -61,6 +62,10 @@ export default {
           this.heroTitle = "News";
         } else if (to.name == "media") {
           this.heroTitle = "Media Coverage";
+        } else if (to.name == "treatments") {
+          this.heroTitle = "BTT Treatment Methods";
+        } else if (to.name == "whatWeTreat") {
+          this.heroTitle = "Conditions We Treat";
         }
       }
     }

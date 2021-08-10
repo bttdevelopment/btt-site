@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
-import Home from "../views/Home.vue";
 
+import Home from "../views/Home.vue";
 const routes = [
   {
     path: "/",
@@ -13,60 +13,57 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue")
+    component: () => import("../views/About.vue")
   },
   {
     path: "/apply_for_treatment",
     name: "treatmentApply",
-    component: () =>
-      import(
-        /* webpackChunkName: "treatment" */ "../views/ApplyForTreatment.vue"
-      )
+    component: () => import("../views/ApplyForTreatment.vue")
   },
   {
-    path: "/what_we_offer",
-    name: "whatWeOffer",
-    component: () =>
-      import(/* webpackChunkName: "offer" */ "../views/WhatWeOffer.vue")
+    path: "/testimonials",
+    name: "testimonials",
+    component: () => import("../views/TheTestimonials.vue")
   },
   {
-    path: "/innovation",
-    name: "innovation",
-    component: () =>
-      import(/* webpackChunkName: "innovation" */ "../views/TheInnovation.vue")
+    path: "/treatments",
+    name: "treatments",
+    component: () => import("../views/TheTreatments.vue")
   },
   {
     path: "/contact",
     name: "contact",
-    component: () =>
-      import(/* webpackChunkName: "contactUs" */ "../views/ContactUs.vue")
+    component: () => import("../views/ContactUs.vue")
   },
   {
     path: "/medical-institute",
     name: "medicalInstite",
-    component: () =>
-      import(/* webpackChunkName: "medical" */ "../views/MedicalInstitute.vue")
+    component: () => import("../views/MedicalInstitute.vue")
   },
   {
     path:"/research-publication",
     name: "researchPublication",
-    component: () =>
-      import(
-        /* webpackChunkName: "research" */ "../views/ResearchPublication.vue"
-      )
+    component: () => import("../views/ResearchPublication.vue")
   },
   {
     path:"/news",
     name: "news",
-    component: () =>
-      import(/* webpackChunkName: "news" */ "../views/TheNews.vue")
+    component: () => import("../views/TheNews.vue")
   },
   {
     path:"/media",
     name: "media",
-    component: () =>
-      import(/* webpackChunkName: "media" */ "../views/TheMedia.vue")
+    component: () => import("../views/TheMedia.vue")
+  },
+  {
+    path:"/successful-cases",
+    name: "successfulCases",
+    component: () => import("../views/SuccessfulCases.vue")
+  },
+  {
+    path:"/what-we-treat",
+    name: "whatWeTreat",
+    component: () => import("../views/WhatWeTreat.vue")
   }
 ];
 
