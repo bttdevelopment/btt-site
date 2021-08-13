@@ -92,7 +92,7 @@
     </div>
     <div class="container is-max-desktop has-text-bttblue has-text-centered mt-6">
       <h1 class="subtitle is-1 has-text-bttblue">Patient Stories</h1>
-      <carousel class="carousel-container" @next="next" @prev="prev">
+      <!-- <carousel class="carousel-container" @next="next" @prev="prev">
         <carousel-slide
           v-for="(slide, index) in slides"
           :key="slide"
@@ -112,53 +112,53 @@
               </div>
             </div>
         </carousel-slide>
-      </carousel>
+      </carousel> -->
     </div>
   </section>
 </template>
 <script>
-import Carousel from '../components/Carousel.vue';
-import CarouselSlide from '../components/CarouselSlide.vue';
-export default {
-  data() {
-    return {
-      slides: [
-        ["I'm a testimonial. Click to edit me and add text that says something nice about you and your services. Let your customers review you and tell their friends how great you are.", "John, 32"],
-        ["I'm a testimonial. Click to edit me and add text that says something nice about you and your services. Let your customers review you and tell their friends how great you are.", "Jane, 42"],
-        ["I'm a testimonial. Click to edit me and add text that says something nice about you and your services. Let your customers review you and tell their friends how great you are.", "Jay, 60"]
-      ],
-      visibleSlide : 0,
-      direction: "left",
-    }
-  },
-  computed: {
-    slidesLen() {
-      return this.slides.length;
-    }
-  },
-  methods: {
-    next() {
-      if(this.visibleSlide >= this.slides.length - 1){
-          this.visibleSlide = 0
-       }else{
-          this.visibleSlide++
-        }
-        this.direction = "left"
-    },
-    prev() {
-      if(this.visibleSlide <= 0) {
-        this.visibleSlide = this.slidesLen - 1;
-      }else{
-        this.visibleSlide--;
-      }
-      this.direction = "right"
-    }
-  },
-  components: {
-    Carousel,
-    CarouselSlide
-  }
-}
+// import Carousel from '../components/Carousel.vue';
+// import CarouselSlide from '../components/CarouselSlide.vue';
+// export default {
+//   data() {
+//     return {
+//       slides: [
+//         ["I'm a testimonial. Click to edit me and add text that says something nice about you and your services. Let your customers review you and tell their friends how great you are.", "John, 32"],
+//         ["I'm a testimonial. Click to edit me and add text that says something nice about you and your services. Let your customers review you and tell their friends how great you are.", "Jane, 42"],
+//         ["I'm a testimonial. Click to edit me and add text that says something nice about you and your services. Let your customers review you and tell their friends how great you are.", "Jay, 60"]
+//       ],
+//       visibleSlide : 0,
+//       direction: "left",
+//     }
+//   },
+//   computed: {
+//     slidesLen() {
+//       return this.slides.length;
+//     }
+//   },
+//   methods: {
+//     next() {
+//       if(this.visibleSlide >= this.slides.length - 1){
+//           this.visibleSlide = 0
+//        }else{
+//           this.visibleSlide++
+//         }
+//         this.direction = "left"
+//     },
+//     prev() {
+//       if(this.visibleSlide <= 0) {
+//         this.visibleSlide = this.slidesLen - 1;
+//       }else{
+//         this.visibleSlide--;
+//       }
+//       this.direction = "right"
+//     }
+//   },
+//   components: {
+//     Carousel,
+//     CarouselSlide
+//   }
+// }
 </script>
 
 <style>

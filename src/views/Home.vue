@@ -1,6 +1,35 @@
 <template>
+<div class="container is-italic is-max-desktop mt-6">
+      <p class=" has-text-weight-bold" style="font-size:500%; height:80px;">
+        "
+      </p>
+      <p class="has-text-centered is-size-3">
+        "Future Medicine will be the Medicine of Frequencies"
+      </p>
+      <p class=" has-text-weight-bold has-text-right is-offset-11" style="font-size:500%;  height:80px; position:relative; top: -25px;">
+        "
+      </p>
+      <p class="has-text-centered is-size-4 has-text-weight-semibold">
+        - Albert Einstein
+      </p>
+    </div>
+<div class="container is-hidden-mobile carousel-container is-max-widescreen mt-6">
+    <Carousel :autoplay="4000" :wrap-around="false">
+      <Slide v-for="slide in slides" :key="slide" class="slide-container"  v-bind:id="slide.image" >
+          <span class="the-slide ml-6 white-shadow">
+            <h1 class="is-size-1 has-text-weight-bold white">{{slide.text}}</h1>
+            <p class="mt-4 is-size-5 has-text-weight-semibold has-text-bttgreen" style="max-width: 500px">This text isn't within a block either. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.</p>
+          </span>
+      </Slide>
+
+      <template #addons>
+        <Pagination />
+      </template>
+    </Carousel>
+  </div>
   <section class="section is-widescreen mt-4 has-text-left">
     <!-- <div class="container is-widescreen btt-margin has-text-left"> -->
+    
     <div class="container is-max-widescreen mt-5">
       <h2 class="title has-text-bttgreen is-2" style="margin-bottom:2em;">
         Brain Tunnelgenix Technologies, Corp.
@@ -103,20 +132,6 @@
         </div>
       </div>
     </div>
-    <div class="container is-italic is-max-desktop mt-6">
-      <p class=" has-text-weight-bold" style="font-size:500%; height:80px;">
-        "
-      </p>
-      <p class="has-text-centered is-size-3">
-        "Future Medicine will be the Medicine of Frequencies"
-      </p>
-      <p class=" has-text-weight-bold has-text-right is-offset-11" style="font-size:500%;  height:80px; position:relative; top: -25px;">
-        "
-      </p>
-      <p class="has-text-centered is-size-4 has-text-weight-semibold">
-        - Albert Einstein
-      </p>
-    </div>
   </section>
   <section class="section is-max-desktop  has-text-left">
     <div class="container notification btt-lightblue-bg is-max-desktop" style="margin-bottom:70px;">
@@ -211,9 +226,27 @@
   </section>
 </template>
 <script>
-export default {
-  name: "Home"
-};
+import { defineComponent } from 'vue'
+import { Carousel, Pagination, Slide } from 'vue3-carousel';
+
+import 'vue3-carousel/dist/carousel.css';
+
+export default defineComponent({
+  name: 'Autoplay',
+  data() {
+    return {
+      slides: [
+        {image: "slide1_bg", text: "this is Slide 1"},
+        {image: "slide2_bg", text: "this is Slide 2"}
+      ]
+    }
+  },
+  components: {
+    Carousel,
+    Slide,
+    Pagination,
+  },
+});
 </script>
 <style scoped>
   .btt-hippocampus-img{
@@ -268,6 +301,40 @@ export default {
   background-size: cover;
   background-position: 5%;
 }
+
+.slide-container {
+  width: 100%;
+  min-height: 500px;
+  height:80vh;
+  background-size:cover;
+  background-position: center;
+  border-radius: 3em;
+  justify-content: left !important;
+  
+}
+#slide1_bg{
+  background-image: url("../assets/treatment.jpg")
+}
+#slide2_bg{
+  background-image: url("../assets/thermometer_bg.jpg")
+}
+.slide-container:after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background: radial-gradient(circle, transparent 75%, #008f89 200%);
+  mix-blend-mode: revert;
+  border-radius: 3em
+}
+.slide-container:hover:after {
+  background: none;
+}
+.the-slide {
+  text-align: left !important;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+
 @media (max-width: 600px) {
 
       .parallax-bg {
