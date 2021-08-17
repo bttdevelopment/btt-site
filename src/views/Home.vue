@@ -133,52 +133,6 @@
       </div>
     </div>
   </section>
-  <section class="section is-max-desktop  has-text-left">
-    <div class="container notification btt-lightblue-bg is-max-desktop" style="margin-bottom:70px;">
-      <div class="columns is-vcentered">
-        <div class="column is-half" >
-        <h1 class="title is-4 has-text-bttgreen ">Hypothermia Machine</h1>
-        <p class="is-size-6 mb-5 has-text-grey-dark is-size-7">
-          BTT™ Corp. also treats patients through cooling, or hypothermia. One
-          of the main applications of cooling is to treat Multiple Sclerosis
-          (MS). Patients who have MS have damage to the sleeves of fatty tissue
-          that protect nerve cells in their brain, called myelin sheaths.
-          Cooling is believed to help restore the myelin sheath. Cooling the
-          brain is also used to improve sleep, reduce anxiety, and depression.
-        </p>
-        <button class="button is-outlined is-bttgreen is-size-7">
-          <span>Learn More  </span><span class="icon"><i class="fas fa-arrow-alt-circle-right"></i></span>
-        </button>
-        </div>
-        <div class="column is-half" style="max-height: 300px;">
-          <figure class="image hypothermia-img-figure">
-            <img src="../assets/hypothermia.png" >
-          </figure>
-        </div>
-      </div>
-    </div>
-    <div class=" container notification btt-lightblue-bg is-max-desktop">
-      <div class="columns is-vcentered">
-        <div class="column is-half" >
-        <h1 class="title is-4 has-text-bttgreen">Hyperthermia Machine</h1>
-        <p class="is-size-6 mb-5 has-text-grey-dark is-size-7">
-            Using BTT™ Corp’s. innovative technology, the BTT™ Medical Institute
-            successfully treats previously considered incurable
-            neurodegenerative diseases with the objective of inducing heat shock
-            protein production through brain guided hyperthermia.
-          </p>
-        <button class="button is-outlined is-bttgreen is-size-7">
-          <span>Learn More  </span><span class="icon"><i class="fas fa-arrow-alt-circle-right"></i></span>
-        </button>
-        </div>
-        <div class="column is-half" style="max-height: 300px;">
-          <figure class="image hyperthermia-img-figure">
-            <img src="../assets/hyperthermia.png" >
-          </figure>
-        </div>
-      </div>
-    </div>
-  </section>
   <section class="has-text-left section mb-6">
     <div class="container is-max-widescreen">
     <h1 class="title ">BTT Wellness Platform</h1>
@@ -237,7 +191,9 @@ export default defineComponent({
     return {
       slides: [
         {image: "slide1_bg", text: "this is Slide 1"},
-        {image: "slide2_bg", text: "this is Slide 2"}
+        {image: "slide2_bg", text: "this is Slide 2"},
+        {image: "slide3_bg", text: "this is Slide 3"},
+        {image: "slide4_bg", text: "this is Slide 4"}
       ]
     }
   },
@@ -279,16 +235,6 @@ export default defineComponent({
   min-height: 500px;
   max-height: 700px;
 }
-.hypothermia-img-figure {
-  min-width: 100px;
-  max-width: 400px;
-  left: 0;
-  top: -100px;  
-}
-.hypothermia-img-figure {
-  min-width: 100px;
-  max-width: 400px;
-}
 
 .glass-bg{
   background-image: url("../assets/abstract_bg.jpg");
@@ -317,6 +263,14 @@ export default defineComponent({
 }
 #slide2_bg{
   background-image: url("../assets/thermometer_bg.jpg")
+}
+
+#slide3_bg{
+  background-image: url("../assets/abstract_3.jpg");
+}
+
+#slide4_bg{
+  background-image: url("../assets/medical-partners.jpg");
 }
 .slide-container:after {
   content: '';
