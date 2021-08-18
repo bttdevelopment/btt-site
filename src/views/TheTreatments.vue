@@ -1,5 +1,29 @@
 <template>
+        <div class="modal" :class="{ 'is-active': hyperIsActive}">
+  <div class="modal-background" @click=" hyperIsActive = !hyperIsActive "></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <p class="modal-card-title">What Is Hyperthermia?</p>
+      <button class="delete" @click=" hyperIsActive = !hyperIsActive " aria-label="close"></button>
+    </header>
+    <div class="modal-card-body">
+      <HyperThermia />
+    </div>
+  </div>
+</div>
+
     <section class="section is-max-desktop  has-text-left">
+      <div class="container">
+        <div class="content">
+        <h1 class="title is-4 has-text-bttgreen">Brain Guided Heat Shock Protein Induction Treatment</h1>
+        <p>The BTT™ Biomedical and Research Institute was created to harness the brain’s innate abilities, eliminating the need to penetrate the blood-brain barrier.  </p>
+        <p>The human brain contains approximately 400 miles of blood vessels. These blood vessels are lined by closely linked endothelial cells to form the blood-brain barrier (BBB). The blood-brain barrier protects the brain from toxins by tightly regulating the transfer of proteins, nutrients, and waste products.</p>
+        <p>Delivering therapeutics across the BBB has been a major obstacle to successful drug development in neurodegeneration and is crucial to providing effective treatment. </p>
+        <p class="is-underlined">Working with the Brain, Not Against it.</p>
+        <p>Through the Brain Thermal Tunnel we will be using those 400 miles of blood vessels to treat neurodegenerative diseases without impacting the natural barriers created to protect the brain. </p>
+        <p class="is-size-5 mb-6 has-text-centered is-italic ">We are providing treatment of the Future…Our treatment is noninvasive, no anesthesia and has no side effects. <br><span class="icon mt-4 has-text-bttblue"><i class="fas fa-brain"></i></span> <span class="icon mt-4 has-text-bttgreen"><i class="fas fa-brain"></i></span> <span class="icon mt-4"><i class="fas fa-brain"></i></span></p>
+        </div>
+      </div>
     <div class=" container notification btt-lightblue-bg is-max-desktop">
       <div class="columns is-vcentered">
         <div class="column is-half" >
@@ -10,15 +34,10 @@
             neurodegenerative diseases with the objective of inducing heat shock
             protein production through brain guided hyperthermia.
           </p>
-          <div class="modal">
-            <div class="modal-background"></div>
-            <div class="modal-content">
-              <HyperThermia />
-            </div>
-            <button class="button is-outlined is-bttgreen is-size-7">
-          <span>Learn More  </span><span class="icon"><i class="fas fa-arrow-alt-circle-right"></i></span>
+          <button class="button is-outlined is-bttgreen is-size-7" @click="hyperIsActive = !hyperIsActive">
+            <span>Learn More  </span>
+          <span class="icon"><i class="fas fa-arrow-alt-circle-right"></i></span>
         </button>
-        </div>
         </div>
         <div class="column is-half" style="max-height: 300px;">
           <figure class="image hyperthermia-img-figure">
@@ -55,7 +74,16 @@
 <script>
 import HyperThermia from "../components/HyperThermia.vue";
 export default {
-  name: "TheTreatments"
+  name: "TheTreatments",
+  components: {
+      HyperThermia
+  },
+  data() {
+    return {
+      hyperIsActive: false,
+      hypoIsActive: false
+    }
+  }
 }
 </script>
 

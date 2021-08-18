@@ -17,7 +17,7 @@
     <Carousel :autoplay="4000" :wrap-around="false">
       <Slide v-for="slide in slides" :key="slide" class="slide-container"  v-bind:id="slide.image" >
           <span class="the-slide ml-6 white-shadow">
-            <h1 class="is-size-1 has-text-weight-bold white">{{slide.text}}</h1>
+            <h1 class="is-size-1 has-text-weight-bold white has-text-bttblue">{{slide.text}}</h1>
             <p class="mt-4 is-size-5 has-text-weight-semibold has-text-bttgreen" style="max-width: 500px">This text isn't within a block either. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.</p>
           </span>
       </Slide>

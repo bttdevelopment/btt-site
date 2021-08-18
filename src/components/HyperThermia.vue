@@ -1,6 +1,5 @@
 <template>
   <div class="content">
-    <h2>What is hyperthermia?</h2>
     <h4>BTT™ Heat Shock or Hyperthermia Treatment</h4>
     <p>
       Using BTT™ Corp’s. innovative technology, the BTT ™ Biomedical and
