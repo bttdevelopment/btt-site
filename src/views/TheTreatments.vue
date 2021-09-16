@@ -12,8 +12,8 @@
   </div>
 </div>
 
-    <section class="section is-max-desktop  has-text-left">
-      <div class="container">
+    <section class="section is-max-desktop  has-text-left mt-6 ">
+      <div class="container" style="max-width: 600px; margin-bottom: 80px;">
         <div class="content">
         <h1 class="title is-4 has-text-bttgreen">Brain Guided Heat Shock Protein Induction Treatment</h1>
         <p>The BTT™ Biomedical and Research Institute was created to harness the brain’s innate abilities, eliminating the need to penetrate the blood-brain barrier.  </p>
@@ -21,10 +21,11 @@
         <p>Delivering therapeutics across the BBB has been a major obstacle to successful drug development in neurodegeneration and is crucial to providing effective treatment. </p>
         <p class="is-underlined">Working with the Brain, Not Against it.</p>
         <p>Through the Brain Thermal Tunnel we will be using those 400 miles of blood vessels to treat neurodegenerative diseases without impacting the natural barriers created to protect the brain. </p>
-        <p class="is-size-5 mb-6 has-text-centered is-italic ">We are providing treatment of the Future…Our treatment is noninvasive, no anesthesia and has no side effects. <br><span class="icon mt-4 has-text-bttblue"><i class="fas fa-brain"></i></span> <span class="icon mt-4 has-text-bttgreen"><i class="fas fa-brain"></i></span> <span class="icon mt-4"><i class="fas fa-brain"></i></span></p>
+        <p class="is-size-5 my-6 has-text-centered is-italic ">We are providing treatment of the Future…Our treatment is noninvasive, no anesthesia and has no side effects.</p>
+        <p class="has-text-centered"><span class="icon mt-4"><i class="fas fa-brain"></i></span> <span class="icon mt-4"><i class="fas fa-brain"></i></span> <span class="icon mt-4"><i class="fas fa-brain"></i></span></p>
         </div>
       </div>
-    <div class=" container notification btt-lightblue-bg is-max-desktop">
+    <div class="mt-6 container notification btt-lightblue-bg is-max-desktop">
       <div class="columns is-vcentered">
         <div class="column is-half" >
         <h1 class="title is-4 has-text-bttgreen">Hyperthermia Machine</h1>
@@ -46,7 +47,7 @@
         </div>
       </div>
     </div>
-    <div class="container mt-6 notification btt-lightblue-bg is-max-desktop" style="margin-bottom:70px;">
+    <div class="container notification btt-lightblue-bg is-max-desktop" style="margin-bottom:70px;margin-top:100px;">
       <div class="columns is-vcentered">
         <div class="column is-half" >
         <h1 class="title is-4 has-text-bttgreen ">Hypothermia Machine</h1>

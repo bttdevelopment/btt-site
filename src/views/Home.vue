@@ -13,7 +13,7 @@
         - Albert Einstein
       </p>
     </div>
-<div class="container is-hidden-mobile carousel-container is-max-widescreen mt-6">
+<div class="container is-hidden-mobile is-max-widescreen mt-6">
     <Carousel :autoplay="4000" :wrap-around="false">
       <Slide v-for="slide in slides" :key="slide" class="slide-container"  v-bind:id="slide.image" >
           <span class="the-slide ml-6 white-shadow">
@@ -32,7 +32,7 @@
     
     <div class="container is-max-widescreen mt-5">
       <h2 class="title has-text-bttgreen is-2" style="margin-bottom:2em;">
-        Brain Tunnelgenix Technologies, Corp.
+        What We Do
       </h2>
     </div>
     <div class="container mb-6 is-max-widescreen">
@@ -52,7 +52,7 @@
           <div
             class="column is-6 extra-padding btt-lightblue-bg" style="margin-top: 100px;"
           >
-            <h4 class="title is-4">What we do</h4>
+            <h4 class="title is-4">What's BTT</h4>
             <p>
               I’m a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.
             </p>
@@ -62,7 +62,7 @@
           <div
             class="column is-6 extra-padding btt-lightblue-bg"
           >
-            <h4 class="title is-4">BTT wellness</h4>
+            <h4 class="title is-4">Disease 1</h4>
             <p>
               I’m a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.
             </p>
@@ -70,7 +70,7 @@
           <div
             class="column is-6 extra-padding btt-lightblue-bg"
           >
-            <h4 class="title is-4">BTT Medical</h4>
+            <h4 class="title is-4">Disease 2</h4>
             <p>
               I’m a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.
             </p>
@@ -80,7 +80,7 @@
           <div
             class="column is-6 extra-padding btt-lightblue-bg"
           >
-            <h4 class="title is-4">What we offer</h4>
+            <h4 class="title is-4">Disease 3</h4>
             <p>
               I’m a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.
             </p>
@@ -88,7 +88,7 @@
           <div
             class="column is-6 extra-padding btt-lightblue-bg"
           >
-            <h4 class="title is-4">Brain Thermal Tunnel</h4>
+            <h4 class="title is-4">Disease 4</h4>
             <p>
               I’m a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.
             </p>
@@ -102,7 +102,7 @@
   <section id="parallax" class="section has-text-left">
     <div class="container is-max-widescreen mt-5">
       <h2 class="title has-text-bttgreen">
-        What We Offer
+        Heat Shock Protein Induction Treatment
       </h2>
     </div>
     <div
@@ -111,7 +111,7 @@
       <div class="columns is-vcentered">
         <div class="column mt-6 has-text-right">
           <h1 class="subtitle">
-            Our Products
+            Hyperthermia Treatment
           </h1>
           <p>
             I’m a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.
@@ -124,7 +124,7 @@
         </div>
         <div class="column mt-6 has-text-left">
           <h1 class="subtitle">
-            Our Products
+            Hypothermia Treatment
           </h1>
           <p>
             I’m a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.
@@ -190,17 +190,17 @@ export default defineComponent({
   data() {
     return {
       slides: [
-        {image: "slide1_bg", text: "this is Slide 1"},
-        {image: "slide2_bg", text: "this is Slide 2"},
-        {image: "slide3_bg", text: "this is Slide 3"},
-        {image: "slide4_bg", text: "this is Slide 4"}
+        {image: "slide1_bg", text: "A BTT Highlight"},
+        {image: "slide2_bg", text: "A BTT Highlight 1"},
+        {image: "slide3_bg", text: "A BTT Highlight 2"},
+        {image: "slide4_bg", text: "A BTT Highlight 3"}
       ]
     }
   },
   components: {
     Carousel,
     Slide,
-    Pagination,
+    Pagination
   },
 });
 </script>

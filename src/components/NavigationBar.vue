@@ -33,13 +33,14 @@
             <router-link class="navbar-item" to="/our_company">About</router-link>
           <!-- </div> -->
           <!-- <div class="navbar-item"> -->
-            <router-link class="navbar-item" to="testimonials">Testimonials</router-link>
             <div class="navbar-item has-dropdown is-hoverable">
               <router-link class="navbar-link is-arrowless" to="treatments">Treatments
               </router-link>
               <div class="navbar-dropdown">
                 <router-link class="navbar-item" to="/what-we-treat">What We Treat</router-link>
                 <router-link class="navbar-item" to="treatments">Treatment Methods</router-link>
+                <hr class="navbar-divider">
+                <router-link class="navbar-item" to="testimonials">Patient Testimonials</router-link>
               </div>
             </div>
             <router-link class="navbar-item" to="/research-publication"
